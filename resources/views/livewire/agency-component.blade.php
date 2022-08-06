@@ -1,3 +1,12 @@
+@section('page_title','The Exhibition Network')
+@section('page_description','Advertise Big')
+@section('page_keywords', 'Council, Innovation, sell your business, market, expand your franchise, buy a brand licenese,  business_design, business_strategy, business_design_sprint, innovation_accelerator, product_service, go_to_market, entrepreneur_residence, strategy_sprint, creative')
+@section('page_author' , 'COI - CouncilofInnovation')
+@section('page_name',' All Job')
+@section('page_path',' Job')
+@section('page_list',' addJob')
+@section('page_name',' All Job')
+
 <main id="content" role="main">
       <!-- Hero -->
       <div class="position-relative">
@@ -8,13 +17,13 @@
               <div class="mb-5">
                 <h1 class="display-4 text-primary">Anyone, anywhere,<br>can start a
                   <span class="text-warning">
-                    <span class="js-typedjs" data-hs-typed-options="{
-                            &quot;strings&quot;: [&quot;business.&quot;, &quot;startup.&quot;, &quot;success.&quot;],
-                            &quot;typeSpeed&quot;: 90,
-                            &quot;loop&quot;: true,
-                            &quot;backSpeed&quot;: 30,
-                            &quot;backDelay&quot;: 2500
-                          }">startup.</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+                    <span class="js-typedjs" data-hs-typed-options='{
+                            "strings": ["business.", "startup.", "success."],
+                            "typeSpeed": 90,
+                            "loop": true,
+                            "backSpeed": 30,
+                            "backDelay": 2500
+                          }'>startup.</span>
                   </span>
                 </h1>
               </div>
@@ -517,4 +526,101 @@
         </div>
       </div>
       <!-- End CTA -->
+
+      <!-- FAQ -->
+      <div class="container content-space-t-1 content-space-t-md-3">
+        <!-- Heading -->
+        <div class="w-lg-50 text-center mx-lg-auto mb-7">
+          <h3>Frequently Asked Questions</h3>
+        </div>
+        <!-- End Heading -->
+
+        <div class="w-md-75 w-lg-65 mx-md-auto">
+          <!-- Card -->
+          <div class="card card-lg">
+            <div class="card-body">
+              <!-- Accordion -->
+              <div class="accordion accordion-flush" id="accordionFAQ">
+                <!-- Accordion Item -->
+                <div class="accordion-item">
+                  <div class="accordion-header" id="headingOne">
+                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      What methods of payments are supported?
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      You can purchase the themes on Bootstrap Themes via any major credit/debit card (via Stripe) or with your Paypal account. We don't support cryptocurrencies or invoicing at this time.
+                    </div>
+                  </div>
+                </div>
+                <!-- End Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion-item">
+                  <div class="accordion-header" id="headingTwo">
+                    <a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      Can I cancel at anytime?
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      If you'd like a refund please reach out to us at <a href="https://htmlstream.com/space/index.html#">themes@getbootstrap.com</a>. If you need technical help with the theme before a refund please reach out to the seller first and they can get in touch with us if they're unable to resolve the issue.
+                    </div>
+                  </div>
+                </div>
+                <!-- End Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion-item">
+                  <div class="accordion-header" id="headingThree">
+                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How do I get a receipt for my purchase?
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      You'll receive an email from Bootstrap themes once your purchase is complete.
+                    </div>
+                  </div>
+                </div>
+                <!-- End Accordion Item -->
+
+                <!-- Accordion Item -->
+                <div class="accordion-item">
+                  <div class="accordion-header" id="headingFour">
+                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Which license do I need?
+                    </a>
+                  </div>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                      There are three license types - <a href="https://htmlstream.com/space/index.html#">Standard</a>, <a href="https://htmlstream.com/space/index.html#">Multisite</a>, and <a href="https://htmlstream.com/space/index.html#">Extended</a>. We've provided the table below for a quick look at the difference between the them, as well as a few examples of ways each license could be used. If you'd like more of the nitty-gritty details you can find them below and always feel free to reach out with any questions you have at <a href="https://htmlstream.com/space/index.html#">themes@getbootstrap.com</a>.
+                    </div>
+                  </div>
+                </div>
+                <!-- End Accordion Item -->
+              </div>
+              <!-- End Accordion -->
+            </div>
+
+            <div class="card-footer bg-soft-warning text-center">
+              <p class="mb-0">Still have questions?</p>
+              <a class="link" href="https://htmlstream.com/space/page-contacts.html">Contact our friendly support team <i class="bi-chevron-right small ms-1"></i></a>
+            </div>
+          </div>
+          <!-- End Card -->
+        </div>
+      </div>
+      <!-- End FAQ -->
+
+      <!-- Shape -->
+      <div class="shape-container">
+        <div class="shape shape-bottom text-primary-dark">
+          <svg width="3000" height="400" viewBox="0 0 3000 400" fill="none" xmlns="http://www.w3.org/2000/svg')}}">
+            <path d="M0 400H3000V0L0 400Z" fill="#fff"></path>
+          </svg>
+        </div>
+      </div>
+      <!-- End Shape -->
     </main>

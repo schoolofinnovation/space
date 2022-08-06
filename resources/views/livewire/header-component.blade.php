@@ -10,10 +10,10 @@
           <!-- Toggler -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-default">
-              <i class="bi-list"></i>
+              <i class="bi bi-list"></i>
             </span>
             <span class="navbar-toggler-toggled">
-              <i class="bi-x"></i>
+              <i class="bi bi-x"></i>
             </span>
           </button>
           <!-- End Toggler -->
@@ -22,12 +22,12 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <!-- Landings -->
-              <li class="hs-has-mega-menu nav-item" data-hs-mega-menu-item-options="{
-                    &quot;desktop&quot;: {
-                      &quot;maxWidth&quot;: &quot;30rem&quot;
+              <li class="hs-has-mega-menu nav-item" data-hs-mega-menu-item-options='{
+                    "desktop": {
+                      "maxWidth": "30rem"
                     }
-                  }">
-                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle active" aria-current="page" href="https://htmlstream.com/space/index.html#" role="button" aria-expanded="false">Landings</a>
+                  }'>
+                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle active" aria-current="page" href="#" role="button" aria-expanded="false">Why Space</a>
 
                 <!-- Mega Menu -->
                 <div class="hs-mega-menu hs-position-right-fix dropdown-menu hs-mega-menu-desktop-lg animated" aria-labelledby="landingsMegaMenu" style="min-width: 30rem; max-width: 30rem; animation-duration: 300ms;">
@@ -35,12 +35,13 @@
                   <div class="navbar-dropdown-menu-inner">
                     <div class="row">
                       <div class="col-sm mb-3 mb-sm-0">
-                        <span class="dropdown-header">Classic</span>
-                        <a class="dropdown-item active" href="https://htmlstream.com/space/index.html">Corporate</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/landing-agency.html">Agency</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/landing-consulting.html">Consulting</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/landing-services.html">Services</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/landing-business.html">Business</a>
+                        <span class="dropdown-header">Business</span>
+                        <a class="dropdown-item active" href="">Reasons to attend</a>
+                        <a class="dropdown-item " href="">Insights</a>
+                        <a class="dropdown-item " href="">Networking</a>
+                        <a class="dropdown-item " href="">Lead generation</a>
+                        <a class="dropdown-item " href="">Team building</a>
+                        
                       </div>
 
                       <div class="col-sm">
@@ -61,7 +62,7 @@
 
               <!-- Pages -->
               <li class="hs-has-mega-menu nav-item">
-                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="https://htmlstream.com/space/index.html#" role="button" aria-expanded="false">Pages</a>
+                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">What We Do</a>
 
                 <!-- Mega Menu -->
                 <div class="hs-mega-menu hs-position-right dropdown-menu w-100 hs-mega-menu-desktop-lg animated" aria-labelledby="pagesMegaMenu" style="min-width: 42rem; animation-duration: 300ms;">
@@ -69,42 +70,38 @@
                   <div class="navbar-dropdown-menu-inner">
                     <div class="row">
                       <div class="col-sm-6 col-md-3">
-                        <span class="dropdown-header">Company</span>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-about.html">About</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-services.html">Services</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-customer-stories.html">Customer Stories</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-customer-story.html">Customer Story</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-help-center.html">Help Center</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-help-center-categories.html">Help Center: Categories</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-help-center-article.html">Help Center: Article</a>
+                        <span class="dropdown-header">Pitches</span>
+                          <a class="dropdown-item " href="">Advertise Your Business</a>
+                          <a class="dropdown-item " href="">Brand Partnership</a>
+                          <a class="dropdown-item " href="">Start up Program</a>
+                          <a class="dropdown-item " href="">Impact startups</a>
+                          <a class="dropdown-item " href="">Startup journey</a>
+                          <a class="dropdown-item " href="">Featured Startups</a>
+                       
                       </div>
 
                       <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
-                        <span class="dropdown-header invisible">Company</span>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-careers.html">Careers</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-careers-overview.html">Careers: Overview</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-hire-us.html">Hire Us</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-contacts.html">Contacts</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-login.html">Log In</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-signup.html">Sign Up</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-reset-password.html">Forgot Password</a>
+                        <span class="dropdown-header">Our Products</span>
+                          <a class="dropdown-item " href="">Attendee Module</a>
+                          <a class="dropdown-item " href="">Content Module</a>
+                          <a class="dropdown-item " href="">Exhibitor Module</a>
+                          <a class="dropdown-item " href="">Delivery Module</a>
                       </div>
 
                       <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
-                        <span class="dropdown-header">Portfolio</span>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/portfolio-modern.html">Modern</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/portfolio-classic.html">Classic</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/portfolio-case-study.html">Case Study</a>
+                        <span class="dropdown-header">Offerings</span>
+                          <a class="dropdown-item " href="">Recognition</a>
+                          <a class="dropdown-item " href="">Certification</a>
+                          <a class="dropdown-item " href="">Business Survey</a>
                       </div>
 
                       <div class="col-sm-6 col-md-3">
-                        <span class="dropdown-header">Specialty pages</span>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-pricing.html">Pricing</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-coming-soon.html">Coming Soon</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-coming-soon-simple.html">Coming Soon: Simple</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-error-404.html">Error 404</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-terms.html">Terms &amp; Conditions</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/page-privacy.html">Privacy &amp; Policy</a>
+                        <span class="dropdown-header">Participate </span>
+                        <a class="dropdown-item " href="">Convince your boss</a>
+                        <a class="dropdown-item " href="">Exhibition</a>
+                        <a class="dropdown-item " href="">Conference</a>
+                        <a class="dropdown-item " href="">Speaker</a>
+                        <a class="dropdown-item " href="">Awards<span href="" class="badge bg-primary rounded-pill ms-1">Nominate</span></a>
                       </div>
                     </div>
                     <!-- End Row -->
@@ -117,30 +114,28 @@
 
               <!-- Blog -->
               <li class="hs-has-sub-menu nav-item">
-                <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="https://htmlstream.com/space/index.html#" role="button" aria-expanded="false">Blog</a>
+                <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">About Us</a>
 
                 <!-- Mega Menu -->
                 <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="blogMegaMenu" style="min-width: 12rem; animation-duration: 300ms;">
-                  <a class="dropdown-item " href="https://htmlstream.com/space/blog-classic.html">Classic</a>
-                  <a class="dropdown-item " href="https://htmlstream.com/space/blog-article.html">Article</a>
-                  <a class="dropdown-item " href="https://htmlstream.com/space/blog-author-profile.html">Author Profile</a>
+                  <a class="dropdown-item " href="">Partner with Space </a>
+                  <a class="dropdown-item " href="">Meet our partners</a>
+                  <a class="dropdown-item " href="">Space Blog</a>
                 </div>
                 <!-- End Mega Menu -->
               </li>
               <!-- End Blog -->
 
               <!-- Docs -->
-              <li class="hs-has-mega-menu nav-item" data-hs-mega-menu-item-options="{
-                    &quot;desktop&quot;: {
-                      &quot;maxWidth&quot;: &quot;20rem&quot;
-                    }
-                  }">
-                <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="https://htmlstream.com/space/index.html#" role="button" aria-expanded="false">Docs</a>
+              <li class="hs-has-mega-menu nav-item" data-hs-mega-menu-item-options='{
+                    "desktop": { "maxWidth": "20rem" }
+                  }'>
+                <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Certification</a>
 
                 <!-- Mega Menu -->
                 <div class="hs-mega-menu hs-position-right dropdown-menu hs-mega-menu-desktop-lg animated" aria-labelledby="docsMegaMenu" style="min-width: 20rem; max-width: 20rem; animation-duration: 300ms;">
                   <!-- Link -->
-                  <a class="navbar-dropdown-menu-media-link" href="https://htmlstream.com/space/documentation/index.html">
+                  <a class="navbar-dropdown-menu-media-link" href="">
                     <div class="d-flex">
                       <div class="flex-shrink-0">
                         <span class="svg-icon svg-icon-sm text-primary">
@@ -153,7 +148,7 @@
                       </div>
 
                       <div class="flex-grow-1 ms-3">
-                        <span class="navbar-dropdown-menu-media-title">Documentation <span class="badge bg-primary rounded-pill ms-1">v2.2</span></span>
+                        <span class="navbar-dropdown-menu-media-title">Get Certified <span class="badge bg-primary rounded-pill ms-1">v2.2</span></span>
                         <p class="navbar-dropdown-menu-media-desc">Development guides for building projects with Space</p>
                       </div>
                     </div>
@@ -163,7 +158,7 @@
                   <div class="dropdown-divider"></div>
 
                   <!-- Link -->
-                  <a class="navbar-dropdown-menu-media-link" href="https://htmlstream.com/space/snippets/index.html">
+                  <a class="navbar-dropdown-menu-media-link" href="">
                     <div class="d-flex">
                       <div class="flex-shrink-0">
                         <span class="svg-icon svg-icon-sm text-primary">
@@ -176,7 +171,7 @@
                       </div>
 
                       <div class="flex-grow-1 ms-3">
-                        <span class="navbar-dropdown-menu-media-title">Snippets</span>
+                        <span class="navbar-dropdown-menu-media-title">Certified Exhibition</span>
                         <p class="navbar-dropdown-menu-media-desc">Move quickly with copy-to-clipboard feature</p>
                       </div>
                     </div>
@@ -191,27 +186,28 @@
 
               <!-- Log in -->
               <li class="nav-item">
-                <a class="js-animation-link btn btn-ghost-secondary btn-no-focus me-2 me-lg-0" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" data-hs-show-animation-options="{
-                           &quot;targetSelector&quot;: &quot;#signupModalFormLogin&quot;,
-                           &quot;groupName&quot;: &quot;idForm&quot;
-                         }" data-hs-show-animation-link-group="idForm">Log in</a>
+                <a class="js-animation-link btn btn-ghost-secondary btn-no-focus me-2 me-lg-0" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" data-hs-show-animation-options='{
+                           "targetSelector": "#signupModalFormLogin",
+                           "groupName": "idForm "
+                         }' data-hs-show-animation-link-group="idForm">Log in</a>
 
-                <a class="js-animation-link d-lg-none btn btn-primary" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" data-hs-show-animation-options="{
-                           &quot;targetSelector&quot;: &quot;#signupModalFormSignup&quot;,
-                           &quot;groupName&quot;: &quot;idForm&quot;
-                         }" data-hs-show-animation-link-group="idForm">
-                  <i class="bi-person-circle me-1"></i> Sign up
+                <a class="js-animation-link d-lg-none btn btn-primary" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" 
+                data-hs-show-animation-options='{
+                           "targetSelector": "#signupModalFormSignup",
+                           "groupName": "idForm"
+                         }' data-hs-show-animation-link-group="idForm">
+                  <i class="bi-person-circle me-1"></i> Membership
                 </a>
               </li>
               <!-- End Log in -->
 
               <!-- Sign up -->
               <li class="nav-item">
-                <a class="js-animation-link d-none d-lg-inline-block btn btn-primary" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" data-hs-show-animation-options="{
-                           &quot;targetSelector&quot;: &quot;#signupModalFormSignup&quot;,
-                           &quot;groupName&quot;: &quot;idForm&quot;
-                         }" data-hs-show-animation-link-group="idForm">
-                  <i class="bi-person-circle me-1"></i> Sign up
+                <a class="js-animation-link d-none d-lg-inline-block btn btn-primary" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" data-hs-show-animation-options='{
+                           "targetSelector": "#signupModalFormSignup",
+                           "groupName": "idForm"
+                         }' data-hs-show-animation-link-group="idForm">
+                  <i class=" bi bi-person-circle me-1"></i> Membership
                 </a>
               </li>
               <!-- End Sign up -->

@@ -1,3 +1,12 @@
+@section('page_title','The Exhibition Network')
+@section('page_description','Advertise Big')
+@section('page_keywords', 'Exhibition, space, advertise, market, sponsership, expand your franchise, buy a brand licenese,  business_design, business_strategy, business_design_sprint, innovation_accelerator, product_service, go_to_market, entrepreneur_residence, strategy_sprint, creative')
+@section('page_author' , 'COI - CouncilofInnovation')
+@section('page_name',' All Job')
+@section('page_path',' Job')
+@section('page_list',' addJob')
+@section('page_name',' All Job')
+
 <main id="content" role="main">
       <!-- Hero -->
       <div class="bg-primary-dark position-relative overflow-hidden">
@@ -8,18 +17,64 @@
               <div class="pe-lg-3 mb-7">
                 <h1 class="display-3 text-white mb-3 mb-md-5">Solving problems for every
                   <span class="text-warning">
-                    <span class="js-typedjs" data-hs-typed-options="{
-                            &quot;strings&quot;: [&quot;team.&quot;, &quot;startup.&quot;, &quot;business.&quot;],
-                            &quot;typeSpeed&quot;: 90,
-                            &quot;loop&quot;: true,
-                            &quot;backSpeed&quot;: 30,
-                            &quot;backDelay&quot;: 2500
-                          }">team</span><span class="typed-cursor" aria-hidden="true">|</span>
+                    <span class="js-typedjs" data-hs-typed-options='{
+                            "strings": ["team.", "startup.", "business."],
+                            "typeSpeed": 90,
+                            "loop": true,
+                            "backSpeed": 30,
+                            "backDelay": 2500
+                          }'>team</span><!--<span class="typed-cursor" aria-hidden="true">|</span>-->
                   </span>
                 </h1>
-                <p class="lead text-white-70">Built on standard web technology, teams use Space to build beautiful cross-platform hybrid apps in a fraction of the time.</p>
+                <p class="lead text-white-70">Built on standard space, teams use Space to build best cross-platform hybrid advertising space in a fraction of the time.</p>
               </div>
               <!-- End Heading -->
+
+              <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <!-- Info Block -->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon text-white">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.1671 18.1421C22.4827 18.4577 23.0222 18.2331 23.0206 17.7868L23.0039 13.1053V5.52632C23.0039 4.13107 21.8729 3 20.4776 3H8.68815C7.2929 3 6.16183 4.13107 6.16183 5.52632V9H13C14.6568 9 16 10.3431 16 12V15.6316H19.6565L22.1671 18.1421Z" fill="#035A4B"></path>
+                        <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M1.98508 18V13C1.98508 11.8954 2.88051 11 3.98508 11H11.9851C13.0896 11 13.9851 11.8954 13.9851 13V18C13.9851 19.1046 13.0896 20 11.9851 20H4.10081L2.85695 21.1905C2.53895 21.4949 2.01123 21.2695 2.01123 20.8293V18.3243C1.99402 18.2187 1.98508 18.1104 1.98508 18ZM5.99999 14.5C5.99999 14.2239 6.22385 14 6.49999 14H11.5C11.7761 14 12 14.2239 12 14.5C12 14.7761 11.7761 15 11.5 15H6.49999C6.22385 15 5.99999 14.7761 5.99999 14.5ZM9.49999 16C9.22385 16 8.99999 16.2239 8.99999 16.5C8.99999 16.7761 9.22385 17 9.49999 17H11.5C11.7761 17 12 16.7761 12 16.5C12 16.2239 11.7761 16 11.5 16H9.49999Z" fill="#035A4B"></path>
+                        </svg>
+
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-4">
+                      <h6 class="text-white mb-0">24 hours</h6>
+                      <p class="text-white-70">Response time</p>
+                    </div>
+                  </div>
+                  <!-- End Info Block -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-6">
+                  <!-- Info Block -->
+                  <div class="d-flex">
+                    <div class="flex-shrink-0">
+                      <span class="svg-icon text-white">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg')}}">
+                        <path opacity="0.3" d="M4.875 20.75C4.63542 20.75 4.39583 20.6542 4.20417 20.4625L2.2875 18.5458C1.90417 18.1625 1.90417 17.5875 2.2875 17.2042C2.67083 16.8208 3.29375 16.8208 3.62917 17.2042L4.875 18.45L8.0375 15.2875C8.42083 14.9042 8.99583 14.9042 9.37917 15.2875C9.7625 15.6708 9.7625 16.2458 9.37917 16.6292L5.54583 20.4625C5.35417 20.6542 5.11458 20.75 4.875 20.75Z" fill="#035A4B"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 3C3.34315 3 2 4.34315 2 6V11.865C3.04486 11.3127 4.23591 11 5.5 11C9.47412 11 12.7263 14.091 12.9836 18H18.0249L20.3178 20.2929C20.9478 20.9229 22.0249 20.4767 22.0249 19.5858V15L22 15.0098L22 15V6C22 4.34315 20.6569 3 19 3H5ZM6 7C5.44772 7 5 7.44772 5 8C5 8.55228 5.44771 9 6 9H15C15.5523 9 16 8.55228 16 8C16 7.44772 15.5523 7 15 7H6Z" fill="#035A4B"></path>
+                        </svg>
+
+                      </span>
+                    </div>
+
+                    <div class="flex-grow-1 ms-4">
+                      <h6 class="text-white mb-0">92%</h6>
+                      <p class="text-white-70">Satisfaction rate</p>
+                    </div>
+                  </div>
+                  <!-- End Info Block -->
+                </div>
+                <!-- End Col -->
+              </div>
 
               <div class="row">
                 <div class="col-sm-6 mb-3 mb-sm-0">
@@ -222,8 +277,8 @@
       <div class="container content-space-t-1 content-space-t-md-3">
         <!-- Heading -->
         <div class="w-lg-65 text-center mx-lg-auto mb-7">
-          <h3>Take the best path forward</h3>
-          <p class="fs-6">Actionable strategies and business marketing advice help you to grow faster.</p>
+          <h3>Bring the best path forward for all of your events together.</h3>
+          <p class="fs-6">With strategies and business marketing advice. In a fraction of the time, you can increase your sales growth.</p>
         </div>
         <!-- End Heading -->
 
@@ -257,8 +312,8 @@
                   </div>
 
                   <div class="flex-grow-1 ms-3">
-                    <h6 class="nav-title">All-in-one workspace</h6>
-                    <p class="nav-text text-body">Create a business, whether you’ve got a fresh idea.</p>
+                    <h6 class="nav-title"> Personalization Simplified</h6>
+                    <p class="nav-text text-body">Create meaningful experiences online and offline for attendees, speakers, and exhibitors.</p>
                   </div>
                 </div>
               </a>
@@ -278,8 +333,8 @@
                   </div>
 
                   <div class="flex-grow-1 ms-3">
-                    <h6 class="nav-title">Automation on a whole new level</h6>
-                    <p class="nav-text text-body">Use automation to scale campaigns profitably and save time doing it.</p>
+                    <h6 class="nav-title">Celebrate your Certification</h6>
+                    <p class="nav-text text-body"> Customers identify a brand that they can trust and scale-up sales campagins efficiently.</p>
                   </div>
                 </div>
               </a>
@@ -299,8 +354,8 @@
                   </div>
 
                   <div class="flex-grow-1 ms-3">
-                    <h6 class="nav-title">Solving problems for every team</h6>
-                    <p class="nav-text text-body">One tool for your company to share knowledge and ship projects.</p>
+                    <h6 class="nav-title">Personalize the Attendee Journey</h6> 
+                    <p class="nav-text text-body">Engage attendees, keep them coming back for more, and accelerate conversions.</p>
                   </div>
                 </div>
               </a>
@@ -311,100 +366,7 @@
         <!-- End Nav Scroller -->
 
         <!-- Tab Content -->
-        <div class="tab-content" id="featuresTabContent">
-          <div class="tab-pane fade show active" id="featuresOne" role="tabpanel" aria-labelledby="featuresOne-tab">
-            <!-- Devices -->
-            <div class="devices">
-              <!-- Mobile Device -->
-              <figure class="device-mobile">
-                <div class="device-mobile-frame">
-                  <img class="device-mobile-img" src="{{asset('assets/img/img3.jpg')}}" alt="Image Description">
-                </div>
-              </figure>
-              <!-- End Mobile Device -->
-
-              <!-- Browser Device -->
-              <figure class="device-browser">
-                <div class="device-browser-header">
-                  <div class="device-browser-header-btn-list">
-                    <span class="device-browser-header-btn-list-btn"></span>
-                    <span class="device-browser-header-btn-list-btn"></span>
-                    <span class="device-browser-header-btn-list-btn"></span>
-                  </div>
-                  <div class="device-browser-header-browser-bar">www.htmlstream.com/space/</div>
-                </div>
-
-                <div class="device-browser-frame">
-                  <img class="device-browser-img" src="{{asset('assets/elements/img/img8.jpg')}}" alt="Image Description">
-                </div>
-              </figure>
-              <!-- End Browser Device -->
-            </div>
-            <!-- End Devices -->
-          </div>
-
-          <div class="tab-pane fade" id="featuresTwo" role="tabpanel" aria-labelledby="featuresTwo-tab">
-            <!-- Devices -->
-            <div class="devices">
-              <!-- Mobile Device -->
-              <figure class="device-mobile">
-                <div class="device-mobile-frame">
-                  <img class="device-mobile-img" src="{{asset('assets/elements/img/img4.jpg')}}" alt="Image Description">
-                </div>
-              </figure>
-              <!-- End Mobile Device -->
-
-              <!-- Browser Device -->
-              <figure class="device-browser">
-                <div class="device-browser-header">
-                  <div class="device-browser-header-btn-list">
-                    <span class="device-browser-header-btn-list-btn"></span>
-                    <span class="device-browser-header-btn-list-btn"></span>
-                    <span class="device-browser-header-btn-list-btn"></span>
-                  </div>
-                  <div class="device-browser-header-browser-bar">www.htmlstream.com/space/</div>
-                </div>
-
-                <div class="device-browser-frame">
-                  <img class="device-browser-img" src="{{asset('assets/elements/img/img6.jpg')}}" alt="Image Description">
-                </div>
-              </figure>
-              <!-- End Browser Device -->
-            </div>
-            <!-- End Devices -->
-          </div>
-
-          <div class="tab-pane fade" id="featuresThree" role="tabpanel" aria-labelledby="featuresThree-tab">
-            <!-- Devices -->
-            <div class="devices">
-              <!-- Mobile Device -->
-              <figure class="device-mobile">
-                <div class="device-mobile-frame">
-                  <img class="device-mobile-img" src="{{asset('assets/elements/img/img2.jpg')}}" alt="Image Description">
-                </div>
-              </figure>
-              <!-- End Mobile Device -->
-
-              <!-- Browser Device -->
-              <figure class="device-browser">
-                <div class="device-browser-header">
-                  <div class="device-browser-header-btn-list">
-                    <span class="device-browser-header-btn-list-btn"></span>
-                    <span class="device-browser-header-btn-list-btn"></span>
-                    <span class="device-browser-header-btn-list-btn"></span>
-                  </div>
-                  <div class="device-browser-header-browser-bar">www.htmlstream.com/space/</div>
-                </div>
-
-                <div class="device-browser-frame">
-                  <img class="device-browser-img" src="{{asset('assets/elements/img/img1.jpg')}}" alt="Image Description">
-                </div>
-              </figure>
-              <!-- End Browser Device -->
-            </div>
-            <!-- End Devices -->
-          </div>
-        </div>
+       
         <!-- End Tab Content -->
       </div>
       <!-- End Features -->
@@ -415,16 +377,16 @@
           <div class="row justify-content-end align-items-md-center">
             <div class="d-none d-md-block col-md-6 position-absolute top-0 start-0 bg-img-center h-100" style="background-image: url(./assets/img/img7.jpg)"></div>
             <div class="d-md-none mb-5 mb-md-0">
-              <img class="img-fluid" src="{{asset('assets/svg/img7.jpg')}}" alt="Image Description">
+              <img class="img-fluid" src="{{asset('assets/img/img7.jpg')}}" alt="Image Description">
             </div>
 
             <div class="col-md-6">
               <div class="p-md-5 p-lg-7">
                 <!-- Heading -->
                 <div class="mb-4 mb-sm-7">
-                  <span class="text-cap">Create a website</span>
+                  <span class="text-cap">Create a Exhibition brand identity</span>
                   <h3>Less overhead, more collaboration</h3>
-                  <p>Start with award-winning templates, then customize to fit your style and professional needs.</p>
+                  <p>Get award-winning business space that can be customized to suit your business needs and professional goals.</p>
                 </div>
                 <!-- End Heading -->
 
@@ -432,11 +394,11 @@
                   <div class="col-sm-6 col-md-12 col-lg-6">
                     <!-- List Checked -->
                     <ul class="list-checked list-checked-primary mb-0">
-                      <li class="list-checked-item">Corporate-based Business</li>
-                      <li class="list-checked-item">Creative Services</li>
-                      <li class="list-checked-item">New Business Innovation</li>
-                      <li class="list-checked-item">Online E-commerce</li>
-                      <li class="list-checked-item">Real Estate</li>
+                      <li class="list-checked-item">Brand Partnership</li>
+                      <li class="list-checked-item">Startup Program</li>
+                      <li class="list-checked-item">Impact startups</li>
+                      <li class="list-checked-item">Startup journey</li>
+                      <li class="list-checked-item">Featured Startups</li>
                     </ul>
                     <!-- End List Checked -->
                   </div>
@@ -445,10 +407,10 @@
                   <div class="col-sm-6 col-md-12 col-lg-6">
                     <!-- List Checked -->
                     <ul class="list-checked list-checked-primary mb-0">
-                      <li class="list-checked-item">Portfolio</li>
-                      <li class="list-checked-item">Blogs</li>
-                      <li class="list-checked-item">Booking.com</li>
-                      <li class="list-checked-item">and more...</li>
+                      <li class="list-checked-item">Attendee Module</li>
+                      <li class="list-checked-item">Content Module</li>
+                      <li class="list-checked-item">Exhibitor Module</li>
+                      <li class="list-checked-item">Delivery Module</li>
                     </ul>
                     <!-- End List Checked -->
                   </div>
@@ -456,7 +418,7 @@
                 </div>
                 <!-- End Row -->
 
-                <a class="link" href="https://htmlstream.com/space/index.html#">Explore all templates <i class="bi-chevron-right small ms-1"></i></a>
+                <a class="link" href="#">Explore all <i class="bi-chevron-right small ms-1"></i></a>
               </div>
             </div>
             <!-- End Col -->
@@ -478,8 +440,9 @@
 
             </span>
 
-            <h6>Task Management</h6>
-            <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+            <h6>Brand amplification</h6>
+
+            <p>Align your brand with the authoritative and respected brand of The Exhibition Network</p>
           </div>
           <!-- End Col -->
 
@@ -493,8 +456,8 @@
 
             </span>
 
-            <h6>Activity Reporting</h6>
-            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+            <h6>Executive connections</h6>
+            <p>Rich engagement with large numbers of industry decision-makers through interactive workshops and networking</p>
           </div>
           <!-- End Col -->
 
@@ -507,8 +470,8 @@
 
             </span>
 
-            <h6>Smart Dashboards</h6>
-            <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+            <h6>Thought leadership</h6>
+            <p>Voice your expertise alongside policymakers, CEOs and influencers</p>
           </div>
           <!-- End Col -->
 
@@ -521,8 +484,8 @@
 
             </span>
 
-            <h6>SSO Authentication</h6>
-            <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+            <h6>Product placement</h6>
+            <p>Showcase your latest, innovative solutions to help the industry overcome its toughest challenges</p>
           </div>
           <!-- End Col -->
 
@@ -535,8 +498,8 @@
 
             </span>
 
-            <h6>Competitive Analysis</h6>
-            <p>We strive to embrace and drive change in our industry which allows us to keep our clients relevant.</p>
+            <h6>Global media access</h6>
+            <p>Benefit from a marketing campaign that reaches a global audience of over 100,000 industry professionals</p>
           </div>
           <!-- End Col -->
 
@@ -550,8 +513,8 @@
 
             </span>
 
-            <h6>API Access</h6>
-            <p>This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+            <h6>Data capture & analytics</h6>
+            <p>Post-event data capture and analytics with detailed feedback on campaign promotion and on-the-day engagement</p>
           </div>
           <!-- End Col -->
         </div>
@@ -777,8 +740,144 @@
       </div>
       <!-- End Features -->
 
-      <!-- Blog -->
+      <!-- updateBlog -->
       <div class="container content-space-1 content-space-md-3">
+        <!-- Heading -->
+        <div class="w-lg-65 text-center mx-lg-auto mb-7">
+          <h3>Benefits of partnering with Space</h3>
+          <p class="fs-6">Explore all Space guides and resources.</p>
+        </div>
+        <!-- End Heading -->
+
+        <div class="row mb-5 mb-sm-5">
+          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
+            <!-- Card -->
+            <a class="card card-lg card-transition bg-primary-dark" href="#" style="min-height: 22rem;">
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="badge bg-soft-light">Space Roundtables</span>
+                </div>
+                <h4 class="card-title text-white mb-5">Executive roundtables</h4>
+                <div class="card-title text-white mb-5">A unique opportunity to convene an exclusive group of C-suite executives from your target industry for a relaxed, informative and private discussion.</div>
+                <span class="card-link link-light">Learn more <i class="bi-chevron-right small ms-1"></i></span>
+                <div class="position-absolute bottom-0 start-0 end-0">
+                  <img class="card-img" src="{{asset('assets/svg/shape-4-soft-light.svg')}}" alt="Image Description">
+                </div>
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
+            <!-- Card -->
+            <a class="card card-lg card-transition bg-primary-dark" href="" style="min-height: 22rem;">
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="badge bg-soft-light">Space Certification</span>
+                  
+                </div>
+                <h4 class="card-title text-white mb-5">Certify your Exhibition</h4>
+                <div class="card-title text-white mb-5">If you would like to put forward a speaker for a specific FT Live event, please let us know and one of our content editors will be in touch soon</div>
+                <span class="card-link link-light">Learn more <i class="bi-chevron-right small ms-1"></i></span>
+                <div class="position-absolute bottom-0 start-0 end-0">
+                  <img class="card-img" src="{{asset('assets/svg/shape-5-soft-light.svg')}}" alt="Image Description">
+                </div>
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
+            <!-- Card -->
+            <a class="card card-lg card-transition bg-primary-dark" href="" style="min-height: 22rem;">
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="badge bg-soft-light">Space Recognition & Award</span>
+                </div>
+                <h4 class="card-title text-white mb-5">Engagement Recognition</h4>
+                <div class="card-title text-white mb-5">Voice your expertise alongside policymakers, CEOs and influencers</div>
+                <span class="card-link link-light">Learn more <i class="bi-chevron-right small ms-1"></i></span>
+                <div class="position-absolute bottom-0 start-0 end-0">
+                  <img class="card-img" src="{{asset('assets/svg/shape-6-soft-light.svg')}}" alt="Image Description">
+                </div>
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
+            <!-- Card -->
+            <a class="card card-lg card-transition bg-primary-dark" href="https://htmlstream.com/space/blog-article.html" style="min-height: 22rem;">
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="badge bg-soft-light">Space Partnership</span>
+                </div>
+                <h4 class="card-title text-white mb-5">Media partnerships</h4>
+                <div class="card-title text-white mb-5">Boost the awareness of your association by discussing a mutually beneficial media agreement across one, or several, of our core conferences</div>
+                <span class="card-link link-light">Learn more <i class="bi-chevron-right small ms-1"></i></span>
+                <div class="position-absolute bottom-0 start-0 end-0">
+                  <img class="card-img" src="{{asset('assets/svg/shape-4-soft-light.svg')}}" alt="Image Description">
+                </div>
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
+            <!-- Card -->
+            <a class="card card-lg card-transition bg-primary-dark" href="https://htmlstream.com/space/blog-article.html" style="min-height: 22rem;">
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="badge bg-soft-light">Space Opportunities</span>
+                </div>
+                <h4 class="card-title text-white mb-5">Speaking opportunities</h4>
+                <div class="card-title text-white mb-5">If you would like to put forward a speaker for a specific FT Live event, please let us know and one of our content editors will be in touch soon</div>
+                <span class="card-link link-light">Learn more <i class="bi-chevron-right small ms-1"></i></span>
+                <div class="position-absolute bottom-0 start-0 end-0">
+                  <img class="card-img" src="{{asset('assets/svg/shape-5-soft-light.svg')}}" alt="Image Description">
+                </div>
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+
+          <div class="col-sm-6 col-lg-4 mb-3 mb-lg-5">
+            <!-- Card -->
+            <a class="card card-lg card-transition bg-primary-dark" href="" style="min-height: 22rem;">
+              <div class="card-body">
+                <div class="mb-3">
+                  <span class="badge bg-soft-light">Space Collaboration</span>
+                </div>
+                <h4 class="card-title text-white mb-5">Event partnerships</h4>
+                <div class="card-title text-white mb-5">Explore unique sponsorship opportunities at our Summits or partner with us and co-host a bespoke awards show, roundtable discussion or webinar</div>
+                <span class="card-link link-light">Learn more <i class="bi-chevron-right small ms-1"></i></span>
+                <div class="position-absolute bottom-0 start-0 end-0">
+                  <img class="card-img" src="{{asset('assets/svg/shape-6-soft-light.svg')}}" alt="Image Description">
+                </div>
+              </div>
+            </a>
+            <!-- End Card -->
+          </div>
+          <!-- End Col -->
+        </div>
+        <!-- End Row -->
+
+        <!-- Info -->
+        <div class="text-center">
+          <p class="mb-0">Want to read more?</p>
+          <a class="link" href="#">Explore all Space resources <i class="bi-chevron-right small ms-1"></i></a>
+        </div>
+        <!-- End Info -->
+      </div>
+      <!-- End Blog -->
+
+       <!-- Blog -->
+       <div class="container content-space-1 content-space-md-3">
         <!-- Heading -->
         <div class="w-lg-65 text-center mx-lg-auto mb-7">
           <h3>All about Space</h3>
@@ -792,7 +891,7 @@
             <a class="card card-lg card-transition bg-primary-dark" href="https://htmlstream.com/space/blog-article.html" style="min-height: 22rem;">
               <div class="card-body">
                 <div class="mb-3">
-                  <span class="badge bg-soft-light">Data insights</span>
+                  <span class="badge bg-soft-light">Event partnerships</span>
                 </div>
                 <h4 class="card-title text-white mb-5">State of product analytics report</h4>
                 <span class="card-link link-light">Learn more <i class="bi-chevron-right small ms-1"></i></span>
@@ -846,7 +945,7 @@
         <!-- Info -->
         <div class="text-center">
           <p class="mb-0">Want to read more?</p>
-          <a class="link" href="https://htmlstream.com/space/blog-classic.html">Explore all Space resources <i class="bi-chevron-right small ms-1"></i></a>
+          <a class="link" href="">Explore all Space resources <i class="bi-chevron-right small ms-1"></i></a>
         </div>
         <!-- End Info -->
       </div>
@@ -854,102 +953,27 @@
 
       <div class="border-top mx-auto" style="max-width: 30rem;"></div>
 
-      <!-- FAQ -->
-      <div class="container content-space-t-1 content-space-t-md-3">
-        <!-- Heading -->
-        <div class="w-lg-50 text-center mx-lg-auto mb-7">
-          <h3>Frequently Asked Questions</h3>
-        </div>
-        <!-- End Heading -->
 
-        <div class="w-md-75 w-lg-65 mx-md-auto">
-          <!-- Card -->
-          <div class="card card-lg">
-            <div class="card-body">
-              <!-- Accordion -->
-              <div class="accordion accordion-flush" id="accordionFAQ">
-                <!-- Accordion Item -->
-                <div class="accordion-item">
-                  <div class="accordion-header" id="headingOne">
-                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                      What methods of payments are supported?
-                    </a>
-                  </div>
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionFAQ">
-                    <div class="accordion-body">
-                      You can purchase the themes on Bootstrap Themes via any major credit/debit card (via Stripe) or with your Paypal account. We don't support cryptocurrencies or invoicing at this time.
-                    </div>
-                  </div>
-                </div>
-                <!-- End Accordion Item -->
+       <!-- CTA -->
+       <div class="bg-soft-warning">
+        <div class="container content-space-1 content-space-md-3">
+          
 
-                <!-- Accordion Item -->
-                <div class="accordion-item">
-                  <div class="accordion-header" id="headingTwo">
-                    <a class="accordion-button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                      Can I cancel at anytime?
-                    </a>
-                  </div>
-                  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionFAQ">
-                    <div class="accordion-body">
-                      If you'd like a refund please reach out to us at <a href="https://htmlstream.com/space/index.html#">themes@getbootstrap.com</a>. If you need technical help with the theme before a refund please reach out to the seller first and they can get in touch with us if they're unable to resolve the issue.
-                    </div>
-                  </div>
-                </div>
-                <!-- End Accordion Item -->
-
-                <!-- Accordion Item -->
-                <div class="accordion-item">
-                  <div class="accordion-header" id="headingThree">
-                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      How do I get a receipt for my purchase?
-                    </a>
-                  </div>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionFAQ">
-                    <div class="accordion-body">
-                      You'll receive an email from Bootstrap themes once your purchase is complete.
-                    </div>
-                  </div>
-                </div>
-                <!-- End Accordion Item -->
-
-                <!-- Accordion Item -->
-                <div class="accordion-item">
-                  <div class="accordion-header" id="headingFour">
-                    <a class="accordion-button collapsed" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      Which license do I need?
-                    </a>
-                  </div>
-                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionFAQ">
-                    <div class="accordion-body">
-                      There are three license types - <a href="https://htmlstream.com/space/index.html#">Standard</a>, <a href="https://htmlstream.com/space/index.html#">Multisite</a>, and <a href="https://htmlstream.com/space/index.html#">Extended</a>. We've provided the table below for a quick look at the difference between the them, as well as a few examples of ways each license could be used. If you'd like more of the nitty-gritty details you can find them below and always feel free to reach out with any questions you have at <a href="https://htmlstream.com/space/index.html#">themes@getbootstrap.com</a>.
-                    </div>
-                  </div>
-                </div>
-                <!-- End Accordion Item -->
-              </div>
-              <!-- End Accordion -->
-            </div>
-
-            <div class="card-footer bg-soft-warning text-center">
-              <p class="mb-0">Still have questions?</p>
-              <a class="link" href="https://htmlstream.com/space/page-contacts.html">Contact our friendly support team <i class="bi-chevron-right small ms-1"></i></a>
-            </div>
+          <!-- Heading -->
+          <div class="w-lg-65 text-center mx-lg-auto mb-7">
+            <h3>Contact us about partnership opportunities</h3>
+            <p class="fs-6">Get in touch to discuss a partnership option that works for you and your business objectives and get in front of the most influential companies today.</p>
           </div>
-          <!-- End Card -->
-        </div>
-      </div>
-      <!-- End FAQ -->
+          <!-- End Heading -->
 
-      <!-- Shape -->
-      <div class="shape-container">
-        <div class="shape shape-bottom text-primary-dark">
-          <svg width="3000" height="400" viewBox="0 0 3000 400" fill="none" xmlns="http://www.w3.org/2000/svg')}}">
-            <path d="M0 400H3000V0L0 400Z" fill="#fff"></path>
-          </svg>
+          <div class="text-center">
+            <a class="btn btn-primary" href="">Contact Us</a>
+          </div>
         </div>
-      </div>
-      <!-- End Shape -->
+       </div>
+      <!-- End CTA -->
+
+      
 
       <!-- Clients -->
       <div class="bg-primary-dark">
