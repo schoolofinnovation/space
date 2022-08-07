@@ -15,6 +15,7 @@ use App\Http\Livewire\PricingComponent;
 use App\Http\Livewire\PrivacyComponent;
 use App\Http\Livewire\ServicesComponent;
 use App\Http\Livewire\TermsComponent;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 
@@ -47,4 +48,12 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+});
+
+//sitemap
+Route::get('sitemap',function(){
+$site = App::make('sitemap');
+$site->add(URL::to('/'),date("Y-m-d h:i:s"),1,'daily');
+$site->store('xml', 'sitemap');
+
 });

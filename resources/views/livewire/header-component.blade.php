@@ -98,9 +98,9 @@
                       <div class="col-sm-6 col-md-3">
                         <span class="dropdown-header">Participate </span>
                         <a class="dropdown-item " href="">Convince your boss</a>
-                        <a class="dropdown-item " href="">Exhibition</a>
-                        <a class="dropdown-item " href="">Conference</a>
-                        <a class="dropdown-item " href="">Speaker</a>
+                        <a class="dropdown-item " href="">Exhibition<span href="" class="badge bg-primary rounded-pill ms-1">Pass</span></a>
+                        <a class="dropdown-item " href="">Conference<span href="" class="badge bg-primary rounded-pill ms-1">Attend</span></a>
+                        <a class="dropdown-item " href="">Speaker<span href="" class="badge bg-primary rounded-pill ms-1">Recogniise</span></a>
                         <a class="dropdown-item " href="">Awards<span href="" class="badge bg-primary rounded-pill ms-1">Nominate</span></a>
                       </div>
                     </div>
