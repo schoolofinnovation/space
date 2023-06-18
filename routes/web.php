@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', HomeComponent::class)->name('space.home');
+Route::get( '/', HomeComponent::class)->name('space.home');
 
 //Career
 Route::get('/career', CareerComponent::class)->name('space.career');
