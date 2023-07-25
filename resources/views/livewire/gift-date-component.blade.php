@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <main>
 
  @if($board == 'birthday')
@@ -51,8 +50,3 @@
 @endif
 </main>
 
-=======
-<div>
-    {{-- Care about people's approval and you will be their prisoner. --}}
-</div>
->>>>>>> b389ea91d7a0cf2f883e09c20964f327a7c883a0

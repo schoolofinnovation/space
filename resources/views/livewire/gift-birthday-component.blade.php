@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 <main>
     <div class="col-md-5 mt-2 pt-4 mt-md-0 pt-md-0 align-center">
@@ -30,8 +29,3 @@
     </div>
     </div>
 </main>
-=======
-<div>
-    {{-- Stop trying to control. --}}
-</div>
->>>>>>> b389ea91d7a0cf2f883e09c20964f327a7c883a0

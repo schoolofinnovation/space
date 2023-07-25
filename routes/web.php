@@ -3,11 +3,7 @@
 use App\Http\Livewire\AboutComponent;
 use App\Http\Livewire\Admin\ProductListingComponent;
 use App\Http\Livewire\AgencyComponent;
-<<<<<<< HEAD
 use App\Http\Livewire\ProductComponent;
-=======
-use App\Http\Livewire\Business\ProductComponent;
->>>>>>> b389ea91d7a0cf2f883e09c20964f327a7c883a0
 use App\Http\Livewire\BusinessComponent;
 use App\Http\Livewire\Career\CareerComponent;
 use App\Http\Livewire\Career\DetailComponent;
@@ -27,18 +23,11 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 
-<<<<<<< HEAD
 
 
 Route::get ( '/Expand Your Business', HomeComponent::class)->name('space.home');
 Route::get ( '/', ProductComponent::class)->name('product.home');
 
-=======
-Route::get ( '/', HomeComponent::class)->name('space.home');
-Route::get ( '/product', ProductComponent::class)->name('product.home');
-
-
->>>>>>> b389ea91d7a0cf2f883e09c20964f327a7c883a0
 //Birthday
 Route::get('/birthday', GiftBirthdayComponent::class)->name('gift.business');
 Route::get('/birthday/{board}/tie/{ido}', GiftDateComponent::class)->name('date.business');
