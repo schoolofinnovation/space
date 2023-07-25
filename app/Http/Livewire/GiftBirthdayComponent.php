@@ -32,6 +32,6 @@ class GiftBirthdayComponent extends Component
 
     public function render()
     {
-        return view('livewire.gift-birthday-component')->layout('layouts.base');
+        return view('livewire.gift-birthday-component')->layout('layouts.knotse');
     }
 }

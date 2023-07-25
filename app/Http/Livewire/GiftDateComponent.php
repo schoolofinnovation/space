@@ -38,6 +38,6 @@ class GiftDateComponent extends Component
 
     public function render()
     {
-        return view('livewire.gift-date-component')->layout('layouts.base');
+        return view('livewire.gift-date-component')->layout('layouts.knotse');
     }
 }

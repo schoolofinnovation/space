@@ -54,7 +54,7 @@
                     <div class="card product-card">
                     <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class="ci-heart"></i></button>
                     <a class="card-img-top d-block overflow-hidden" href="#">
-                        <img src="{{url('public/assets/image/exhibition/'.$knots->image)}}" alt="Product"></a>
+                        <img src="{{url('storage/app/exhibition/'.$knots->image)}}" alt="Product"></a>
                         
                     <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">{{$knots->name}}</a>
                         <h3 class="product-title fs-sm"><a href="#">{{$knots->description}}</a></h3>

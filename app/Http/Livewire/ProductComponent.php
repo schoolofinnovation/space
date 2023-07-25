@@ -59,7 +59,7 @@ class ProductComponent extends Component
  //$brand->user_id = Auth::user()->id;
     public function render()
     {
-        $datoJollyKnots = Product::get();
-        return view('livewire.product-component',['datoJollyKnots' => $datoJollyKnots])->layout('layouts.base');
+        $datoJollyKnots = Product::orderBy('updated_at','desc')->get();
+        return view('livewire.product-component',['datoJollyKnots' => $datoJollyKnots])->layout('layouts.knotse');
     }
 }
