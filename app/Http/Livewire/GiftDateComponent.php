@@ -2,10 +2,7 @@
 
 namespace App\Http\Livewire;
 
-<<<<<<< HEAD
 use App\Models\Birthday;
-=======
->>>>>>> b389ea91d7a0cf2f883e09c20964f327a7c883a0
 use Livewire\Component;
 
 class GiftDateComponent extends Component
