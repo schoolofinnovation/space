@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\AboutComponent;
 use App\Http\Livewire\AgencyComponent;
+use App\Http\Livewire\ProductComponent;
 use App\Http\Livewire\BusinessComponent;
 use App\Http\Livewire\Career\CareerComponent;
 use App\Http\Livewire\Career\DetailComponent;
@@ -10,6 +11,8 @@ use App\Http\Livewire\ConsultingComponent;
 use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\CorporateComponent;
 use App\Http\Livewire\ErrorComponent;
+use App\Http\Livewire\GiftBirthdayComponent;
+use App\Http\Livewire\GiftDateComponent;
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\PricingComponent;
 use App\Http\Livewire\PrivacyComponent;
@@ -19,14 +22,26 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get( '/', HomeComponent::class)->name('space.home');
+
+
+Route::get ( '/Expand Your Business', HomeComponent::class)->name('space.home');
+Route::get ( '/', ProductComponent::class)->name('product.home');
+
+//Birthday
+Route::get('/birthday', GiftBirthdayComponent::class)->name('gift.business');
+Route::get('/birthday/{board}/tie/{ido}', GiftDateComponent::class)->name('date.business');
+
+
+
+
+
 
 //Career
 Route::get('/career', CareerComponent::class)->name('space.career');
 Route::get('/description', DetailComponent::class)->name('space.description');
 Route::get('/hire-us', HireusComponent::class)->name('space.hire');
 
-Route::get('/about', AboutComponent::class)->name('space.about');
+//Route::get('/about', AboutComponent::class)->name('space.about');
 Route::get('/agency', AgencyComponent::class)->name('space.agency');
 Route::get('/business', BusinessComponent::class)->name('space.business');
 Route::get('/consulting', ConsultingComponent::class)->name('space.consulting');
