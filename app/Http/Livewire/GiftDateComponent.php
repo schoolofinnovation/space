@@ -2,11 +2,15 @@
 
 namespace App\Http\Livewire;
 
+<<<<<<< HEAD
 use App\Models\Birthday;
+=======
+>>>>>>> b389ea91d7a0cf2f883e09c20964f327a7c883a0
 use Livewire\Component;
 
 class GiftDateComponent extends Component
 {
+<<<<<<< HEAD
     public $Bdate;
     public $Adate;
 
@@ -39,5 +43,10 @@ class GiftDateComponent extends Component
     public function render()
     {
         return view('livewire.gift-date-component')->layout('layouts.base');
+=======
+    public function render()
+    {
+        return view('livewire.gift-date-component');
+>>>>>>> b389ea91d7a0cf2f883e09c20964f327a7c883a0
     }
 }

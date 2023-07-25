@@ -2,11 +2,15 @@
 
 namespace App\Http\Livewire;
 
+<<<<<<< HEAD
 use App\Models\Birthday;
+=======
+>>>>>>> b389ea91d7a0cf2f883e09c20964f327a7c883a0
 use Livewire\Component;
 
 class GiftBirthdayComponent extends Component
 {
+<<<<<<< HEAD
     public $name;
     public $phone;
     public $status;
@@ -33,5 +37,10 @@ class GiftBirthdayComponent extends Component
     public function render()
     {
         return view('livewire.gift-birthday-component')->layout('layouts.base');
+=======
+    public function render()
+    {
+        return view('livewire.gift-birthday-component');
+>>>>>>> b389ea91d7a0cf2f883e09c20964f327a7c883a0
     }
 }
