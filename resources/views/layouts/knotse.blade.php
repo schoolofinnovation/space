@@ -41,12 +41,12 @@
 </head>
 <body>
 
-@livewire('header-component')
+{{--@livewire('header-component')--}}
 
 {{$slot}}
 
 
-@livewire('footer-component') 
+{{--@livewire('footer-component')--}}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
