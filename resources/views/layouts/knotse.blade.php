@@ -46,7 +46,7 @@
 {{$slot}}
 
 
-{{--@livewire('footer-component')--}}
+@livewire('footer-component')
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",

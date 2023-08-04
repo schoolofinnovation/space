@@ -26,50 +26,52 @@
             
             
             <!-- Products grid-->
-            <div class="row mx-n2">
+            <div class="row g-0 mx-n2">
 
               @foreach( $datoJollyKnots as $knots)
                 <!-- Product-->
                 <div class="col-md-4 col-sm-6 px-2 mb-4">
                     <div class="card product-card">
-                    <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class=" bi bi-heart"></i></button>
-                    <a class="card-img-top d-block overflow-hidden" href="#">
-                        <img src="{{url('storage/app/exhibition/'.$knots->image)}}" alt="Product"></a>
-                        
-                    <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">{{$knots->name}}</a>
-                        <h3 class="product-title fs-sm"><a href="#">{{$knots->description}}</a></h3>
-                        <div class="d-flex justify-content-between">
-                        <div class="product-price"><span class="text-accent">{{$knots->price}}<small>00</small></span></div>
-                        <div class="star-rating"><i class="star-rating-icon  bi bi-star-filled active"></i>
-                        <i class="star-rating-icon  bi bi-star-filled active"></i>
-                        <i class="star-rating-icon  bi bi-star-filled active"></i>
-                        <i class="star-rating-icon  bi bi-star-filled active"></i>
-                        <i class="star-rating-icon  bi bi-star"></i>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="card-body card-body-hidden">
-                        <div class="text-center pb-2">
-                        <div class="form-check form-option form-check-inline mb-2">
-                            <input class="form-check-input" type="radio" name="size1" id="s-75">
-                            <label class="form-option-label" for="s-75">7.5</label>
-                        </div>
-                        <div class="form-check form-option form-check-inline mb-2">
-                            <input class="form-check-input" type="radio" name="size1" id="s-80" checked="">
-                            <label class="form-option-label" for="s-80">8</label>
-                        </div>
-                        <div class="form-check form-option form-check-inline mb-2">
-                            <input class="form-check-input" type="radio" name="size1" id="s-85">
-                            <label class="form-option-label" for="s-85">8.5</label>
-                        </div>
-                        <div class="form-check form-option form-check-inline mb-2">
-                            <input class="form-check-input" type="radio" name="size1" id="s-90">
-                            <label class="form-option-label" for="s-90">9</label>
-                        </div>
-                        </div>
-                        <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class=" bi bi-cart fs-sm me-1"></i>Add to Cart</button>
-                        <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class=" bi bi-eye align-middle me-1"></i>Quick view</a></div>
-                    </div>
+                      <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class=" bi bi-heart"></i></button>
+                      <a class="card-img-top d-block overflow-hidden" href="#">
+                          <img src="{{url('storage/app/exhibition/'.$knots->image)}}" alt="Product"></a>
+                          
+                      <div class="card-body py-2">
+                        <a class="product-meta d-block fs-xs pb-1" href="#">{{$knots->name}}</a>
+                          <h3 class="product-title fs-sm"><a href="#">{{$knots->description}}</a></h3>
+                          <div class="d-flex justify-content-between">
+                          <div class="product-price"><span class="text-accent">{{$knots->price}}<small>00</small></span></div>
+                          <div class="star-rating"><i class="star-rating-icon  bi bi-star-fill active"></i>
+                          <i class="star-rating-icon  bi bi-star-fill active"></i>
+                          <i class="star-rating-icon  bi bi-star-fill active"></i>
+                          <i class="star-rating-icon  bi bi-star-fill active"></i>
+                          <i class="star-rating-icon  bi bi-star"></i>
+                          </div>
+                          </div>
+                      </div>
+                      
+                      <div class="card-body card-body-hidden">
+                          <div class="text-center pb-2">
+                          <div class="form-check form-option form-check-inline mb-2">
+                              <input class="form-check-input" type="radio" name="size1" id="s-75">
+                              <label class="form-option-label" for="s-75">7.5</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                              <input class="form-check-input" type="radio" name="size1" id="s-80" checked="">
+                              <label class="form-option-label" for="s-80">8</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                              <input class="form-check-input" type="radio" name="size1" id="s-85">
+                              <label class="form-option-label" for="s-85">8.5</label>
+                          </div>
+                          <div class="form-check form-option form-check-inline mb-2">
+                              <input class="form-check-input" type="radio" name="size1" id="s-90">
+                              <label class="form-option-label" for="s-90">9</label>
+                          </div>
+                          </div>
+                          <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class=" bi bi-cart fs-sm me-1"></i>Add to Cart</button>
+                          <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class=" bi bi-eye align-middle me-1"></i>Quick view</a></div>
+                      </div>
                     </div>
                     <hr class="d-sm-none">
                 </div>
@@ -86,7 +88,7 @@
                         <div class="product-price"><span class="text-accent">$28.<small>50</small></span>
                             <del class="fs-sm text-muted">38.<small>50</small></del>
                         </div>
-                        <div class="star-rating"><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star"></i><i class="star-rating-icon  bi bi-star"></i>
+                        <div class="star-rating"><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star"></i><i class="star-rating-icon  bi bi-star"></i>
                         </div>
                         </div>
                     </div>
@@ -127,13 +129,15 @@
 
               
             </div>
+
+
             <!-- Banner-->
             <div class="py-sm-2">
               <div class="d-sm-flex justify-content-between align-items-center bg-secondary overflow-hidden mb-4 rounded-3">
                 <div class="py-4 my-2 my-md-0 py-md-5 px-4 ms-md-3 text-center text-sm-start">
                   <h4 class="fs-lg fw-light mb-2">Converse All Star</h4>
                   <h3 class="mb-4">Make Your Day Comfortable</h3><a class="btn btn-primary btn-shadow btn-sm" href="#">Shop Now</a>
-                </div><img class="d-block ms-auto" src="./Cartzilla _ Shop grid right sidebar_files/banner.jpg" alt="Shop Converse">
+                </div><img class="d-block ms-auto" src="#" alt="Shop Converse">
               </div>
             </div>
 
@@ -148,7 +152,7 @@
                     <h3 class="product-title fs-sm"><a href="/shop-single-v1.html">Soft Footbed Sandals</a></h3>
                     <div class="d-flex justify-content-between">
                       <div class="product-price"><span class="text-accent">$99.<small>50</small></span></div>
-                      <div class="star-rating"><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star"></i>
+                      <div class="star-rating"><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star"></i>
                       </div>
                     </div>
                   </div>
@@ -190,7 +194,7 @@
                     <h3 class="product-title fs-sm"><a href="/shop-single-v1.html">3-Color Sun Stash Hat</a></h3>
                     <div class="d-flex justify-content-between">
                       <div class="product-price"><span class="text-accent">$25.<small>99</small></span></div>
-                      <div class="star-rating"><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i>
+                      <div class="star-rating"><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star-fill active"></i><i class="star-rating-icon  bi bi-star-fill active"></i>
                       </div>
                     </div>
                   </div>
@@ -764,23 +768,5 @@
         </div>
       </div>
 
-      <div class="container">
-        <form wire:submit.prevent="addProduct">  
-            <input class="form-control" type="text" placeholder="name" wire:model.lazy="name">
-            <input class="form-control" type="text" placeholder="description" wire:model.lazy="description">
-            <input class="form-control" type="text" placeholder="price" wire:model.lazy="price">
-            <input class="form-control" type="text" placeholder="discount" wire:model.lazy="discount">
-            <input class="form-control" type="text" placeholder="salePrice" wire:model.lazy="salePrice">
-            
-            <button class="btn btn-primary btn-shadow d-block w-100 mt-2"  type="submit">Submit</button>
-        </form>                 
-        
-
-        <form wire:submit.prevent="multiImage">
-            <label class="form-label">Upload Multi Image<span class="text-danger">*</span></label> 
-            <input type="file" class="form-control" placeholder="multiple Image" wire:model="brand_logo"  multiple="multiple">
-            <button class="btn btn-primary btn-shadow d-block w-100 mt-2"  type="submit">Submit</button>
-        </form>
-
-      </div>
+     
 </main>

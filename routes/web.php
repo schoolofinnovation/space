@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\AboutComponent;
+use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\ProductListingComponent;
 use App\Http\Livewire\AgencyComponent;
 use App\Http\Livewire\ProductComponent;
@@ -19,6 +20,7 @@ use App\Http\Livewire\PricingComponent;
 use App\Http\Livewire\PrivacyComponent;
 use App\Http\Livewire\ServicesComponent;
 use App\Http\Livewire\TermsComponent;
+use App\Http\Livewire\User\UserDashboardComponent;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
@@ -57,9 +59,20 @@ Route::get('/teams', TermsComponent::class)->name('space.teams');
 
 Route::get('/listing', ProductListingComponent::class);
 
-Route::middleware([
-    'auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
-    Route::get('/dashboard', function () { return view('dashboard'); })->name('dashboard');
+// Route::middleware([
+//     'auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
+//     Route::get('/dashboard', function () { return view('dashboard'); })->name('dashboard');
+// });
+
+//user
+Route::middleware(['auth:sanctum','verified'])->group(function(){
+    Route::get('/user/dashboard', UserDashboardComponent::class)->name('user.dashboard');
+});
+
+
+//admin
+Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
+    Route::get('/admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');;
 });
 
 //sitemap

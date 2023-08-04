@@ -1,220 +1,509 @@
-<header id="header" class="navbar navbar-expand-lg navbar-light navbar-end bg-white">
-      <div class="container">
-        <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
-          <!-- Default Logo -->
-          <a class="navbar-brand text-bolder lh-1" href="route('/')" aria-label="Space" >
-            <!-- <img class="navbar-brand-logo" src="{{asset('assets/svg/jollyknots.jpg')}}" style="height : 40" alt="Image Description"> -->
-             JollYKnots. <figcaption class="blockquote fs-xs"> Gifting by <cite title="Olaro"> Ol'aro</cite></figcaption>
-          </a>
-          <!-- End Default Logo -->
+    <main>
+    
+      <header class="shadow-sm ">
+        <!-- Topbar
+        <div class="topbar topbar-dark bg-dark">
+          <div class="container">
+            <div>
+              <div class="topbar-text dropdown disable-autohide">
+              <a class="topbar-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <img class="me-2" src="" width="20"  >Eng / $</a>
+                <ul class="dropdown-menu my-1" style="">
+                  <li class="dropdown-item">
+                    <select class="form-select form-select-sm">
+                      <option value="usd">$ USD</option>
+                      <option value="eur">€ EUR</option>
+                      <option value="ukp">£ UKP</option>
+                      <option value="jpy">¥ JPY</option>
+                    </select>
+                  </li>
+                  <li><a class="dropdown-item pb-1" href=""><img class="me-2" src="{{asset('image/5.png')}}" width="20" alt="Français">Switerland</a></li>
+                  <li><a class="dropdown-item pb-1" href=""><img class="me-2" src="{{asset('image/6.png')}}" width="20" alt="Deutsch">Canada</a></li>
+                  <li><a class="dropdown-item" href=""><img class="me-2" src="{{asset('image/7.png')}}" width="20" alt="Italiano">India</a></li>
+                </ul>
+              </div>
+              <div class="topbar-text text-nowrap d-none d-md-inline-block border-start border-light ps-3 ms-3">
+              <span class="text-muted me-1">Available 24/7 at</span>
+              <a class="topbar-link" href="tel:00331697720">(00) 33 169 7720</a>
+              </div>
+            </div>
+            <div class="topbar-text dropdown d-md-none ms-auto">
+            <a class="topbar-link dropdown-toggle" href="" data-bs-toggle="dropdown">
+               / Compare / Track</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href=""><i class=" bi bi-heart text-muted me-2"></i>Wishlist </a></li>
+                <li><a class="dropdown-item" href=""><i class="bi bi-shuffle text-muted me-2"></i>Compare (3)</a></li>
+                <li><a class="dropdown-item" href=""><i class="ci-location text-muted me-2"></i>Order tracking</a></li>-->
+             <!-- </ul>
+            </div>
 
-          <!-- Toggler -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-default">
-              <i class="bi bi-list"></i>
-            </span>
-            <span class="navbar-toggler-toggled">
-              <i class="bi bi-x"></i>
-            </span>
-          </button>
-          <!-- End Toggler -->
-      
-          <!-- Collapse -->
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <!-- Landings -->
-              <li class="hs-has-mega-menu nav-item" data-hs-mega-menu-item-options='{
-                    "desktop": {
-                      "maxWidth": "30rem"
-                    }
-                  }'>
-                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle active" aria-current="page" href="#" role="button" aria-expanded="false">Why Space</a>
+            <div class="d-none d-md-block ms-3 text-nowrap">
+            <a class="topbar-link d-none d-md-inline-block" href=""><i class=" bi bi-heart mt-n1"></i>Wishlist</a>
+            <a class="topbar-link ms-3 ps-3 border-start border-light d-none d-md-inline-block" href="">
+            <i class="bi bi-shuffle mt-n1"></i>Compare (3)</a>
+            <a class="topbar-link ms-3 border-start border-light ps-3 d-none d-md-inline-block" href="">
+            <i class="bi bi-loaction mt-n1"></i>Order tracking</a></div>
 
-                <!-- Mega Menu -->
-                <div class="hs-mega-menu hs-position-right-fix dropdown-menu hs-mega-menu-desktop-lg animated" aria-labelledby="landingsMegaMenu" style="min-width: 30rem; max-width: 30rem; animation-duration: 300ms;">
-                  <!-- Main Content -->
-                  <div class="navbar-dropdown-menu-inner">
-                    <div class="row">
-                      <div class="col-sm mb-3 mb-sm-0">
-                        <span class="dropdown-header">Business</span>
-                        <a class="dropdown-item active" href="">Reasons to attend</a>
-                        <a class="dropdown-item " href="">Insights</a>
-                        <a class="dropdown-item " href="">Networking</a>
-                        <a class="dropdown-item " href="">Lead generation</a>
-                        <a class="dropdown-item " href="">Team building</a>
-                        
-                      </div>
-
-                      <div class="col-sm">
-                        <span class="dropdown-header">Services</span>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/landing-services-growth.html">Growth</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/landing-services-saas.html">SaaS</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/landing-services-wallet.html">Wallet</a>
-                        <a class="dropdown-item " href="https://htmlstream.com/space/landing-services-api.html">API</a>
-                      </div>
-                    </div>
-                    <!-- End Row -->
-                  </div>
-                  <!-- End Main Content -->
-                </div>
-                <!-- End Mega Menu -->
-              </li>
-              <!-- End Landings -->
-
-              <!-- Pages -->
-              <li class="hs-has-mega-menu nav-item">
-                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">What We Do</a>
-
-                <!-- Mega Menu -->
-                <div class="hs-mega-menu hs-position-right dropdown-menu w-100 hs-mega-menu-desktop-lg animated" aria-labelledby="pagesMegaMenu" style="min-width: 42rem; animation-duration: 300ms;">
-                  <!-- Main Content -->
-                  <div class="navbar-dropdown-menu-inner">
-                    <div class="row">
-                      <div class="col-sm-6 col-md-3">
-                        <span class="dropdown-header">Pitches</span>
-                          <a class="dropdown-item " href="">Advertise Your Business</a>
-                          <a class="dropdown-item " href="">Brand Partnership</a>
-                          <a class="dropdown-item " href="">Start up Program</a>
-                          <a class="dropdown-item " href="">Impact startups</a>
-                          <a class="dropdown-item " href="">Startup journey</a>
-                          <a class="dropdown-item " href="">Featured Startups</a>
-                       
-                      </div>
-
-                      <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
-                        <span class="dropdown-header">Our Products</span>
-                          <a class="dropdown-item " href="">Attendee Module</a>
-                          <a class="dropdown-item " href="">Content Module</a>
-                          <a class="dropdown-item " href="">Exhibitor Module</a>
-                          <a class="dropdown-item " href="">Delivery Module</a>
-                      </div>
-
-                      <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
-                        <span class="dropdown-header">Offerings</span>
-                          <a class="dropdown-item " href="">Recognition</a>
-                          <a class="dropdown-item " href="">Certification</a>
-                          <a class="dropdown-item " href="">Business Survey</a>
-                      </div>
-
-                      <div class="col-sm-6 col-md-3">
-                        <span class="dropdown-header">Participate </span>
-                        <a class="dropdown-item " href="">Convince your boss</a>
-                        <a class="dropdown-item " href="">Exhibition<span href="" class="badge bg-primary rounded-pill ms-1">Pass</span></a>
-                        <a class="dropdown-item " href="">Conference<span href="" class="badge bg-primary rounded-pill ms-1">Attend</span></a>
-                        <a class="dropdown-item " href="">Speaker<span href="" class="badge bg-primary rounded-pill ms-1">Recogniise</span></a>
-                        <a class="dropdown-item " href="">Awards<span href="" class="badge bg-primary rounded-pill ms-1">Nominate</span></a>
-                      </div>
-                    </div>
-                    <!-- End Row -->
-                  </div>
-                  <!-- End Main Content -->
-                </div>
-                <!-- End Mega Menu -->
-              </li>
-              <!-- End Pages -->
-
-              <!-- Blog -->
-              <li class="hs-has-sub-menu nav-item">
-                <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">About Us</a>
-
-                <!-- Mega Menu -->
-                <div class="hs-sub-menu dropdown-menu hs-sub-menu-desktop-lg animated" aria-labelledby="blogMegaMenu" style="min-width: 12rem; animation-duration: 300ms;">
-                  <a class="dropdown-item " href="">Partner with Space </a>
-                  <a class="dropdown-item " href="">Meet our partners</a>
-                  <a class="dropdown-item " href="">Space Blog</a>
-                </div>
-                <!-- End Mega Menu -->
-              </li>
-              <!-- End Blog -->
-
-              <!-- Docs -->
-              <li class="hs-has-mega-menu nav-item" data-hs-mega-menu-item-options='{
-                    "desktop": { "maxWidth": "20rem" }
-                  }'>
-                <a id="docsMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle " href="#" role="button" aria-expanded="false">Certification</a>
-
-                <!-- Mega Menu -->
-                <div class="hs-mega-menu hs-position-right dropdown-menu hs-mega-menu-desktop-lg animated" aria-labelledby="docsMegaMenu" style="min-width: 20rem; max-width: 20rem; animation-duration: 300ms;">
-                  <!-- Link -->
-                  <a class="navbar-dropdown-menu-media-link" href="">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <span class="svg-icon svg-icon-sm text-primary">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M4.85714 1H11.7364C12.0911 1 12.4343 1.12568 12.7051 1.35474L17.4687 5.38394C17.8057 5.66895 18 6.08788 18 6.5292V19.0833C18 20.8739 17.9796 21 16.1429 21H4.85714C3.02045 21 3 20.8739 3 19.0833V2.91667C3 1.12612 3.02045 1 4.85714 1ZM7 13C7 12.4477 7.44772 12 8 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H8C7.44772 14 7 13.5523 7 13ZM8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44772 18 8 18H11C11.5523 18 12 17.5523 12 17C12 16.4477 11.5523 16 11 16H8Z" fill="#035A4B"></path>
-                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.85714 3H14.7364C15.0911 3 15.4343 3.12568 15.7051 3.35474L20.4687 7.38394C20.8057 7.66895 21 8.08788 21 8.5292V21.0833C21 22.8739 20.9796 23 19.1429 23H6.85714C5.02045 23 5 22.8739 5 21.0833V4.91667C5 3.12612 5.02045 3 6.85714 3ZM7 13C7 12.4477 7.44772 12 8 12H15C15.5523 12 16 12.4477 16 13C16 13.5523 15.5523 14 15 14H8C7.44772 14 7 13.5523 7 13ZM8 16C7.44772 16 7 16.4477 7 17C7 17.5523 7.44772 18 8 18H11C11.5523 18 12 17.5523 12 17C12 16.4477 11.5523 16 11 16H8Z" fill="#035A4B"></path>
-                          </svg>
-
-                        </span>
-                      </div>
-
-                      <div class="flex-grow-1 ms-3">
-                        <span class="navbar-dropdown-menu-media-title">Get Certified <span class="badge bg-primary rounded-pill ms-1">v2.2</span></span>
-                        <p class="navbar-dropdown-menu-media-desc">Development guides for building projects with Space</p>
-                      </div>
-                    </div>
-                  </a>
-                  <!-- End Link -->
-
-                  <div class="dropdown-divider"></div>
-
-                  <!-- Link -->
-                  <a class="navbar-dropdown-menu-media-link" href="">
-                    <div class="d-flex">
-                      <div class="flex-shrink-0">
-                        <span class="svg-icon svg-icon-sm text-primary">
-                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.3" d="M21 2H13C12.4 2 12 2.4 12 3V13C12 13.6 12.4 14 13 14H21C21.6 14 22 13.6 22 13V3C22 2.4 21.6 2 21 2ZM15.7 8L14 10.1V5.80005L15.7 8ZM15.1 4H18.9L17 6.40002L15.1 4ZM17 9.59998L18.9 12H15.1L17 9.59998ZM18.3 8L20 5.90002V10.2L18.3 8ZM9 2H3C2.4 2 2 2.4 2 3V21C2 21.6 2.4 22 3 22H9C9.6 22 10 21.6 10 21V3C10 2.4 9.6 2 9 2ZM4.89999 12L4 14.8V9.09998L4.89999 12ZM4.39999 4H7.60001L6 8.80005L4.39999 4ZM6 15.2L7.60001 20H4.39999L6 15.2ZM7.10001 12L8 9.19995V14.9L7.10001 12Z" fill="#035A4B"></path>
-                          <path d="M21 18H13C12.4 18 12 17.6 12 17C12 16.4 12.4 16 13 16H21C21.6 16 22 16.4 22 17C22 17.6 21.6 18 21 18ZM19 21C19 20.4 18.6 20 18 20H13C12.4 20 12 20.4 12 21C12 21.6 12.4 22 13 22H18C18.6 22 19 21.6 19 21Z" fill="#035A4B"></path>
-                          </svg>
-
-                        </span>
-                      </div>
-
-                      <div class="flex-grow-1 ms-3">
-                        <span class="navbar-dropdown-menu-media-title">Certified Exhibition</span>
-                        <p class="navbar-dropdown-menu-media-desc">Move quickly with copy-to-clipboard feature</p>
-                      </div>
-                    </div>
-                  </a>
-                  <!-- End Link -->
-                </div>
-                <!-- End Mega Menu -->
-              </li>
-              <!-- End Docs -->
-
-              <li class="nav-divider"></li>
-
-              <!-- Log in -->
-              <li class="nav-item">
-                <a class="js-animation-link btn btn-ghost-secondary btn-no-focus me-2 me-lg-0" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" data-hs-show-animation-options='{
-                           "targetSelector": "#signupModalFormLogin",
-                           "groupName": "idForm "
-                         }' data-hs-show-animation-link-group="idForm">Log in</a>
-
-                <a class="js-animation-link d-lg-none btn btn-primary" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" 
-                data-hs-show-animation-options='{
-                           "targetSelector": "#signupModalFormSignup",
-                           "groupName": "idForm"
-                         }' data-hs-show-animation-link-group="idForm">
-                  <i class="bi-person-circle me-1"></i> Membership
-                </a>
-              </li>
-              <!-- End Log in -->
-
-              <!-- Sign up -->
-              <li class="nav-item">
-                <a class="js-animation-link d-none d-lg-inline-block btn btn-primary" href="javascript:;" role="button" data-bs-toggle="modal" data-bs-target="#signupModal" data-hs-show-animation-options='{
-                           "targetSelector": "#signupModalFormSignup",
-                           "groupName": "idForm"
-                         }' data-hs-show-animation-link-group="idForm">
-                  <i class=" bi bi-person-circle me-1"></i> Membership
-                </a>
-              </li>
-              <!-- End Sign up -->
-            </ul>
           </div>
-          <!-- End Collapse -->
-        </nav>
-      </div>
-    </header>
+        </div>-->
+
+        <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
+        <div class="navbar-sticky bg-light">
+          <div class="navbar navbar-expand-lg navbar-light py-0">
+            <div class="container p-0">
+                <a class="navbar-brand d-none d-sm-block  flex-shrink-0 mx-0" href="{{asset('/')}}"></a>
+                <a class="navbar-brand d-none d-sm-block me-3 flex-shrink-0 ml-1 lh-1" href="{{asset('/')}}">
+                    <!-- <img src="{{asset('image/Yoyo.png')}}" width="142" alt="COI"> -->
+                    JollYKnots. <figcaption class="blockquote fs-xs"> Gifting by <cite title="Olaro"> Ol'aro</cite></figcaption>
+                </a> 
+                <a class="navbar-brand d-sm-none me-0 py-2 ml-2 lh-1" href="{{asset('/')}}"> 
+                    <!-- <img src="{{asset('image/Yoyo.png')}}" width="130" alt="COI"> -->
+                    JollYKnots. <figcaption class="blockquote mb-0 fs-xs"> Gifting by <cite title="Olaro"> Ol'aro</cite></figcaption>
+                </a>
+              <!-- Search-->
+              <div class="input-group d-none d-lg-flex flex-nowrap mx-0">
+                <select class="form-select flex-shrink-0" style="width: 1 rem;" wire:model="searchoo">
+                        <option> Search Opportunity</option>
+                        <option  value="opportunity">Opportunity</option>
+                        <option  value="city">City</option>
+                        <option  value="business">Business</option>
+                        <option  value="investment">Investment</option>
+                        <option  value="exhibition" href="#exhibit">Exhibition</option>
+                        <option  value="award" href="#awards">Award</option>
+                        <option  value="magazine" href="">Magazine</option>
+                        <option  value="coispace" href="#awards">COI Space</option>
+                  </select>
+                
+                
+                <!--<input type="search" aria-label="Search">-->
+                  <button class="btn btn-outline-dark" type="submit">
+                    <i class=" bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i></button>
+              </div>
+
+              <!-- Toolbar-->
+              <div class="navbar-toolbar d-flex flex-shrink-0 align-items-center">
+                  <!--<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-tool navbar-stuck-toggler" href=""><span class="navbar-tool-tooltip">Toggle menu</span>
+                  <div class="navbar-tool-icon-box"><i class="navbar-tool-icon bi bi-list"></i></div>
+                </a>
+                    @if(Route::has('login'))
+                      @auth
+                            @if(Auth::user()->utype === 'ADM')
+                              <div class=" ms-1 toggle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                                <div class="navbar-tool ms-1">
+                                    <a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="{{route('login')}}" data-bs-toggle="modal">
+
+                                    <div class="rounded-circle">
+                                      <img class="rounded-circle" src="{{Auth::user()->profile_photo_url}}" alt="{{Auth::user()->name}}" style="max-width: 50%;">
+                                    </div>
+                                      
+                                      <div class="navbar-tool-text ms-n3" ><small>Hello, </small>{{Auth::user()->name}}</div>
+                                    </a>
+                                    {{--<div class="dropdown-menu dropdown-menu-end">
+                                          <div style="min-width: 14rem;">
+                                            <h6 class="dropdown-header">Settings</h6>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/dashboard' == request()->path() ? 'active' : '' }}" href="{{route('admin.dashboard')}}"><i class="bi bi-dashboard opacity-60 me-2"></i>Dashboard</a>
+                                            <a class="dropdown-item d-flex align-items-center {{'user/account' == request()->path() ? 'active' : '' }}" href=""><i class="ci-settings opacity-60 me-2"></i>Profile</a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/entity' == request()->path() ? 'active' : '' }}" href="{{route('admin.info') }}"><i class="bi bi-sliders opacity-60 me-2"></i>Setting</a>
+                                            <div class="dropdown-divider"></div>
+                                            <h6 class="dropdown-header">Dashboard</h6>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/users' == request()->path() ? 'active' : '' }}" href="{{route('admin.dashboard')}}"><i class="bi bi-people opacity-60 me-2"></i>Event<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/users' == request()->path() ? 'active' : '' }}" href="{{route('admin.user')}}"><i class="bi bi-people opacity-60 me-2"></i>User<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/categories' == request()->path() ? 'active' : '' }}" href="{{route('admin.categories')}}"><i class="bi bi-bookmark opacity-60 me-2"></i>Category<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/brands' == request()->path() ? 'active' : '' }}" href="{{route('admin.brand')}}"><i class="ci-dollar opacity-60 me-2"></i>Brand<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/dashboard' == request()->path() ? 'active' : '' }}" href="{{route('admin.dashboard')}}"><i class="ci-dollar opacity-60 me-2"></i>Franchise<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/contacts' == request()->path() ? 'active' : '' }}" href="{{route('admin.contact')}}"><i class="bi bi-envelope opacity-60 me-2"></i>Contact<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/job/applicat' == request()->path() ? 'active' : '' }}" href="{{route('admin.resume')}}"><i class="bi bi-envelope opacity-60 me-2"></i>Resume<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item d-flex align-items-center" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            <i class="bi bi-box-arrow-right opacity-60 me-2"></i>Sign Out</a>
+                                            <form id="logout-form" action="{{route('logout')}}" method="POST">
+                                              @csrf
+                                            </form>
+                                          </div>
+                                        </div>--}}
+                                </div>
+                              </div>
+
+                              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="width: 380px;">
+                                  
+                                  <div class="offcanvas-header">
+                                    <div class="offcanvas-title h5" id="offcanvasExampleLabel">List your Show <br>
+                                    <span class="fs-xs fw-lighter">Got an event? Partner with us</span></div>
+                                    
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                  </div>
+                              
+                                  <div class="list-group list-group-flush border-bottom scrollarea">
+
+                                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">Notifications</normal>
+                                          <small><i class="bi bi-chevron-right"></i></small>
+                                        </div>
+                                        <!--<div class="col-10 mb-1 small fw-lighter">View all your booking & purchases</div>-->
+                                      </a>
+
+                                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/orders' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">Your Orders</normal>
+                                          <small>
+                                          @if (Auth::check()) 
+                                            <i class="bi bi-chevron-right"></i>
+                                            @else
+                                            <i class="bi bi-lock-fill"></i>
+                                            
+                                            @endif
+                                          </small>
+                                        </div>
+                                        <div class="col-10 mb-1 small fw-lighter">View all your booking & purchases</div>
+                                      </a>
+
+                                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">COI Recommends</normal>
+                                          <small><i class="bi bi-chevron-right"></i></small>
+                                        </div>
+                                        <div class="col-10 mb-1 small fw-lighter">Get COI business picked just for you</div>
+                                      </a>
+
+                                      <a href="{{route('admin.global')}}" class=" border-0 list-group-item list-group-item-action {{'admin/global' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">Global</normal>
+                                          <small><i class="bi bi-chevron-right"></i></small>
+                                        </div>
+                                        <div class="col-10 mb-1 small fw-lighter ">Satisfy your palates</div>
+                                      </a>
+
+                                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">Luggage, Travel & Stay</normal>
+                                          <small><i class="bi bi-chevron-right"></i></small>
+                                        </div>
+                                        <div class="col-10 mb-1 small fw-lighter ">Plan your business trip headache's</div>
+                                      </a>
+                                                                                    
+                                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/orders' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">Rewards</normal>
+                                          <small><i class="bi bi-chevron-right"></i></small>
+                                        </div>
+                                        <div class="col-10 mb-1 small fw-lighter ">View your rewards & unlock new ones</div>
+                                      </a>
+
+                                      <a href="#" class="list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">Offers</normal>
+                                          <small><i class="bi bi-chevron-right"></i></small>
+                                        </div>
+                                        <div class="col-10 mb-1 small fw-lighter ">View your rewards & unlock new ones</div>
+                                      </a>
+
+                                      <a href="{{route('user.profile')}}" class="list-group-item list-group-item-action {{'user/profile' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">Accounts & Settings</normal>
+                                          <small><i class="bi bi-chevron-right"></i></small>
+                                        </div>
+                                        <div class="col-10 mb-1 small fw-lighter ">Location, Payments, permissions & More</div>
+                                      </a>
+                                      
+                                      <a href="#" class="list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">Help & Support</normal>
+                                          <small><i class="bi bi-chevron-right"></i></small>
+                                        </div>
+                                        <div class="col-10 mb-1 small fw-lighter ">View commonly asked Queries Chat</div>
+                                      </a>
+                                    
+                                      <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                        <div class="d-flex w-100 align-items-center justify-content-between">
+                                          <normal class="mb-1">Logout</normal>
+                                          <small><i class="bi bi-chevron-right"></i></small>
+                                        </div>
+                                        <div class="col-10 mb-1 small fw-lighter ">View commonly asked Queries Chat</div>
+                                      </a>
+                                      <form id="logout-form" action="{{route('logout')}}" method="POST">
+                                        @csrf
+                                      </form>
+                                    
+
+                                  </div>
+                              </div>
+                            @elseif(Auth::user()->utype === 'USR')
+                              <div class=" ms-1 toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <div class="navbar-tool ms-1">
+                                    <a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="{{route('login')}}" data-bs-toggle="modal">
+
+                                    <div class="rounded-circle">
+                                      <img class="rounded-circle" src="{{Auth::user()->profile_photo_url}}" alt="{{Auth::user()->name}}" style="max-width: 50%;">
+                                    </div>
+                                      
+                                      <div class="navbar-tool-text ms-n3" ><small>Hello, </small>{{Auth::user()->name}}</div>
+                                    </a>
+                                    {{--<div class="dropdown-menu dropdown-menu-end">
+                                          <div style="min-width: 14rem;">
+                                            <h6 class="dropdown-header">Settings</h6>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/dashboard' == request()->path() ? 'active' : '' }}" href="{{route('admin.dashboard')}}"><i class="bi bi-dashboard opacity-60 me-2"></i>Dashboard</a>
+                                            <a class="dropdown-item d-flex align-items-center {{'user/account' == request()->path() ? 'active' : '' }}" href=""><i class="ci-settings opacity-60 me-2"></i>Profile</a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/entity' == request()->path() ? 'active' : '' }}" href="{{route('admin.info') }}"><i class="bi bi-sliders opacity-60 me-2"></i>Setting</a>
+                                            <div class="dropdown-divider"></div>
+                                            <h6 class="dropdown-header">Dashboard</h6>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/users' == request()->path() ? 'active' : '' }}" href="{{route('admin.dashboard')}}"><i class="bi bi-people opacity-60 me-2"></i>Event<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/users' == request()->path() ? 'active' : '' }}" href="{{route('admin.user')}}"><i class="bi bi-people opacity-60 me-2"></i>User<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/categories' == request()->path() ? 'active' : '' }}" href="{{route('admin.categories')}}"><i class="bi bi-bookmark opacity-60 me-2"></i>Category<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/brands' == request()->path() ? 'active' : '' }}" href="{{route('admin.brand')}}"><i class="ci-dollar opacity-60 me-2"></i>Brand<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/dashboard' == request()->path() ? 'active' : '' }}" href="{{route('admin.dashboard')}}"><i class="ci-dollar opacity-60 me-2"></i>Franchise<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/contacts' == request()->path() ? 'active' : '' }}" href="{{route('admin.contact')}}"><i class="bi bi-envelope opacity-60 me-2"></i>Contact<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <a class="dropdown-item d-flex align-items-center {{'admin/job/applicat' == request()->path() ? 'active' : '' }}" href="{{route('admin.resume')}}"><i class="bi bi-envelope opacity-60 me-2"></i>Resume<span class="fs-xs text-muted ms-auto">Active</span></a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item d-flex align-items-center" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                            <i class="bi bi-box-arrow-right opacity-60 me-2"></i>Sign Out</a>
+                                            <form id="logout-form" action="{{route('logout')}}" method="POST">
+                                              @csrf
+                                            </form>
+                                          </div>
+                                        </div>--}}
+                                </div>
+                              </div>
+                            @endif
+                      @else
+                              <a class="navbar-tool ms-1 ms-lg-0 me-n1 me-lg-2" href="{{route('login')}}" data-bs-toggle="">
+                                <div class="navbar-tool-icon-box"><i class="navbar-tool-icon bi bi-person-circle"></i></div>
+                                <div class="navbar-tool-text ms-n3" ><small>Hello, Sign in</small>My Account</div>
+                              </a>
+                      @endif
+                    @endif       
+                
+                 
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="navbar navbar-expand-lg navbar-light navbar-stuck-menu mt-n2 pt-0 pb-2">
+            <div class="container">
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+              <!-- Search-->
+                <div class="input-group d-lg-none my-3"><i class=" bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+                  <input class="form-control rounded-start" type="text" placeholder="Search for opportunity">
+                </div>
+
+                <!-- Departments menu-->
+                <ul class="navbar-nav navbar-mega-nav pe-lg-2 me-lg-2">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle ps-lg-0" href="" data-bs-toggle="dropdown">
+                      <i class=" bi bi-list align-middle mt-n1 me-2"></i>Departments</a>
+                        <ul class="dropdown-menu">
+                         
+                        </ul>
+                  </li>
+                </ul>
+
+              
+                <ul class="navbar-nav">
+                  <li  class="nav-item {{'/' == request()->path() ? 'active' : '' }}">
+                  <a class="nav-link" href="{{asset('/') }}" >Home</a>
+                  </li>
+                  <li  class="nav-item {{'sell-your-business' == request()->path() ? 'active' : '' }}"">
+                  <a class="nav-link" href="">Sell your Business</a>
+                  </li>
+
+                  <li  class="nav-item {{'expand-your-business' == request()->path() ? 'active' : '' }}">
+                    <a class="nav-link" href="" >Expand your Business</a>
+                  </li>
+
+                  <li  class="nav-item {{'buy-a-brand-license' == request()->path() ? 'active' : '' }}">
+                    <a class="nav-link" href="" >Buy a Space</a>
+                  </li>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
+
+            <!--test-->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRig" aria-labelledby="offcanvasRigLabel">
+              <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Add Event</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+               <ul class="navbar-nav">
+                  <!--<li  class="nav-item {{'/' == request()->path() ? 'active' : '' }}">
+                  <a class="nav-link" href="{{asset('/') }}" >Home</a>
+                  </li>-->
+                  <li  class="nav-item {{'sell-your-business' == request()->path() ? 'active' : '' }}"">
+                  <a class="nav-link" href="#">Sell your Business</a>
+                  </li>
+
+                  <li  class="nav-item {{'expand-your-business' == request()->path() ? 'active' : '' }}">
+                    <a class="nav-link" href="#" >Expand your Business</a>
+                  </li>
+
+                  <li  class="nav-item {{'buy-a-brand-license' == request()->path() ? 'active' : '' }}">
+                    <a class="nav-link" href="#" >Buy a Brand License</a>
+                  </li>
+
+                
+                
+                       
+                 
+                </ul>
+              </div>
+            </div>
+
+            <!--down stop-->
+              <div class="offcanvas offcanvas-start" data-bs-toggle="offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 380px;">                  
+                <div class=" ms-1 toggle" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">    
+
+                  <div class="offcanvas-header">
+                    <div class="offcanvas-title fs-sm">
+                      <a href="#">
+                          List your Show <br>
+                          <span class="fs-sm fw-lighter">Got an event? Partner with us</span>
+                      </a>
+                    </div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+                  </div>
+                
+                  <div class="list-group list-group-flush scrollarea">
+
+                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <normal class="mb-1">Products</normal>
+                          <small><i class="bi bi-chevron-right"></i></small>
+                        </div>
+                        <!--<div class="col-10 mb-1 small fw-lighter">View all your booking & purchases</div>-->
+                      </a>
+                      @if(Auth::check())
+                        <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/orders' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                          <div class="d-flex w-100 align-items-center justify-content-between">
+                            <normal class="mb-1">Your Orders</normal>
+                            <small>
+                            @if (Auth::check()) 
+                              <i class="bi bi-chevron-right"></i>
+                              @else
+                              <i class="bi bi-lock-fill"></i>
+                              
+                              @endif
+                            </small>
+                          </div>
+                          <div class="col-10 mb-1 small fw-lighter">View all your booking & purchases</div>
+                        </a>
+                      @endif
+                      {{--<a href="#" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <normal class="mb-1">COI Recommends</normal>
+                          <small><i class="bi bi-chevron-right"></i></small>
+                        </div>
+                        <div class="col-10 mb-1 small fw-lighter">Get COI business picked just for you</div>
+                      </a>--}}
+
+                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <normal class="mb-1">Resources</normal>
+                          <small><i class="bi bi-chevron-right"></i></small>
+                        </div>
+                        {{--<div class="col-10 mb-1 small fw-lighter ">View your rewards & unlock new ones</div>--}}
+                      </a>
+
+                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <normal class="mb-1">Inspiration</normal>
+                          <small><i class="bi bi-chevron-right"></i></small>
+                        </div>
+                        {{--<div class="col-10 mb-1 small fw-lighter ">Plan your business trip headache's</div>--}}
+                      </a>
+                                                                    
+                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'user/orders' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <normal class="mb-1">Pricing</normal>
+                          <small><i class="bi bi-chevron-right"></i></small>
+                        </div>
+                      
+                      </a>
+
+                      <a href="#" class=" list-group-item list-group-item-action {{'user/orders' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                        <div class="d-flex w-100 align-items-center justify-content-between">
+                          <normal class="mb-1">Talk to Sales</normal>
+                        </div>
+                      </a>
+
+
+                      {{--<a href="#" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                              <normal class="mb-1">Offers</normal>
+                              <small><i class="bi bi-chevron-right"></i></small>
+                            </div>
+                            <div class="col-10 mb-1 small fw-lighter ">View your rewards & unlock new ones</div>
+                          </a>
+
+                          <a href="{{route('user.profile')}}" class=" border-0 list-group-item list-group-item-action {{'user/profile' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                              <normal class="mb-1">Accounts & Settings</normal>
+                              <small><i class="bi bi-chevron-right"></i></small>
+                            </div>
+                            <div class="col-10 mb-1 small fw-lighter ">Location, Payments, permissions & More</div>
+                      </a>--}}
+                      
+                      @if(Auth::check())
+                        <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                          <div class="d-flex w-100 align-items-center justify-content-between">
+                            <normal class="mb-1">Logout</normal>
+                            <small><i class="bi bi-chevron-right"></i></small>
+                          </div>
+                          <div class="col-10 mb-1 small fw-lighter ">View commonly asked Queries Chat</div>
+                        </a>
+                        <form id="logout-form" action="{{route('logout')}}" method="POST">
+                          @csrf
+                        </form>
+                      @endif
+
+                      {{--<a href="#" class=" border-0 list-group-item list-group-item-action {{'user/account' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                            <div class="d-flex w-100 align-items-center justify-content-between">
+                              <normal class="mb-1">Help & Support</normal>
+                              <small><i class="bi bi-chevron-right"></i></small>
+                            </div>
+                            <div class="col-10 mb-1 small fw-lighter ">View commonly asked Queries Chat</div>
+                          </a>--}}
+                  </div>
+                  
+                  <div class="handheld-toolbar border-top-0">
+                    <div class="container py-4">
+                      <div class="col-sm-12 ">
+                        <div class="small fw-lighter">Product updates</div>
+                        <small class="lh-1">Get the latest on new features, product improvement, and other announcements.</small>
+                        <div class="bold text-primary fs-sm"> See what's new</div> 
+                      </div>
+
+                      @if(Auth::check())
+                      <div class="col-sm-12 py-3">
+                        <a class="fw-normal text-accent fs-md lh-1" href="#">Dashboard<i class="bi bi-right-chevron"></i> </a>
+                      </div>
+                      @else
+                      
+                      <div class="col-sm-12 py-3">
+                        <div class="fw-normal text-accent fs-md lh-1">Start Free Trial  <i class="bi bi-right-chevron"></i> </div>
+                      </div>
+
+
+                      @endif
+
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            <!--stop-->
+
+        </div>
+      </header>
+
+  </main>
