@@ -2,8 +2,9 @@
       <div class="container">
         <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
           <!-- Default Logo -->
-          <a class="navbar-brand" href="route('/')" aria-label="Space">
-            <img class="navbar-brand-logo" src="{{asset('assets/svg/logo.svg')}}" alt="Image Description">
+          <a class="navbar-brand text-bolder lh-1" href="route('/')" aria-label="Space" >
+            <!-- <img class="navbar-brand-logo" src="{{asset('assets/svg/jollyknots.jpg')}}" style="height : 40" alt="Image Description"> -->
+             JollYKnots. <figcaption class="blockquote fs-xs"> Gifting by <cite title="Olaro"> Ol'aro</cite></figcaption>
           </a>
           <!-- End Default Logo -->
 

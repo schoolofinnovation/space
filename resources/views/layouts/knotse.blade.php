@@ -8,7 +8,7 @@
     <title> @yield('page_title') | The Exhibition Network</title>
     <meta name="description" content="@yield('page_description')">
     <meta name="keyword" content="@yield('page_keyword')">
-    <meta name="author" content = "The Exhibition Network">  
+    <meta name="author" content = "The Gift Barbar ">  
     
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,7 +41,7 @@
 </head>
 <body>
 
-{{--@livewire('header-component')--}}
+@livewire('header-component')
 
 {{$slot}}
 

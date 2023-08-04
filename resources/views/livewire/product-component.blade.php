@@ -1,25 +1,5 @@
 <main>
 
-    <div class="container">
-        <form wire:submit.prevent="addProduct">  
-            <input class="form-control" type="text" placeholder="name" wire:model.lazy="name">
-            <input class="form-control" type="text" placeholder="description" wire:model.lazy="description">
-            <input class="form-control" type="text" placeholder="price" wire:model.lazy="price">
-            <input class="form-control" type="text" placeholder="discount" wire:model.lazy="discount">
-            <input class="form-control" type="text" placeholder="salePrice" wire:model.lazy="salePrice">
-            
-            <button class="btn btn-primary btn-shadow d-block w-100 mt-2"  type="submit">Submit</button>
-        </form>                 
-        
-
-        <form wire:submit.prevent="multiImage">
-            <label class="form-label">Upload Multi Image<span class="text-danger">*</span></label> 
-            <input type="file" class="form-control" placeholder="multiple Image" wire:model="brand_logo"  multiple="multiple">
-            <button class="btn btn-primary btn-shadow d-block w-100 mt-2"  type="submit">Submit</button>
-        </form>
-
-      </div>
-
       <div class="container pb-5 mb-2 mb-md-4">
         <div class="row">
           <!-- Content  -->
@@ -40,8 +20,8 @@
                   </select><span class="fs-sm text-light opacity-75 text-nowrap ms-2 d-none d-md-block">of 287 products</span>
                 </div>
               </div>
-              <div class="d-flex pb-3"><a class="nav-link-style nav-link-light me-3" href="#"><i class="ci-arrow-left"></i></a><span class="fs-md text-light">1 / 5</span><a class="nav-link-style nav-link-light ms-3" href="#"><i class="ci-arrow-right"></i></a></div>
-              <div class="d-none d-sm-flex pb-3"><a class="btn btn-icon nav-link-style bg-light text-dark disabled opacity-100 me-2" href="#"><i class="ci-view-grid"></i></a><a class="btn btn-icon nav-link-style nav-link-light" href="https://cartzilla.createx.studio/shop-list-rs.html"><i class="ci-view-list"></i></a></div>
+              <div class="d-flex pb-3"><a class="nav-link-style nav-link-light me-3" href="#"><i class=" bi bi-arrow-left"></i></a><span class="fs-md text-light">1 / 5</span><a class="nav-link-style nav-link-light ms-3" href="#"><i class=" bi bi-arrow-right"></i></a></div>
+              <div class="d-none d-sm-flex pb-3"><a class="btn btn-icon nav-link-style bg-light text-dark disabled opacity-100 me-2" href="#"><i class=" bi bi-view-grid"></i></a><a class="btn btn-icon nav-link-style nav-link-light" href="/shop-list-rs.html"><i class=" bi bi-view-list"></i></a></div>
             </div>--}}
             
             
@@ -52,7 +32,7 @@
                 <!-- Product-->
                 <div class="col-md-4 col-sm-6 px-2 mb-4">
                     <div class="card product-card">
-                    <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class="ci-heart"></i></button>
+                    <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class=" bi bi-heart"></i></button>
                     <a class="card-img-top d-block overflow-hidden" href="#">
                         <img src="{{url('storage/app/exhibition/'.$knots->image)}}" alt="Product"></a>
                         
@@ -60,11 +40,11 @@
                         <h3 class="product-title fs-sm"><a href="#">{{$knots->description}}</a></h3>
                         <div class="d-flex justify-content-between">
                         <div class="product-price"><span class="text-accent">{{$knots->price}}<small>00</small></span></div>
-                        <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i>
-                        <i class="star-rating-icon ci-star-filled active"></i>
-                        <i class="star-rating-icon ci-star-filled active"></i>
-                        <i class="star-rating-icon ci-star-filled active"></i>
-                        <i class="star-rating-icon ci-star"></i>
+                        <div class="star-rating"><i class="star-rating-icon  bi bi-star-filled active"></i>
+                        <i class="star-rating-icon  bi bi-star-filled active"></i>
+                        <i class="star-rating-icon  bi bi-star-filled active"></i>
+                        <i class="star-rating-icon  bi bi-star-filled active"></i>
+                        <i class="star-rating-icon  bi bi-star"></i>
                         </div>
                         </div>
                     </div>
@@ -87,8 +67,8 @@
                             <label class="form-option-label" for="s-90">9</label>
                         </div>
                         </div>
-                        <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
-                        <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+                        <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class=" bi bi-cart fs-sm me-1"></i>Add to Cart</button>
+                        <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class=" bi bi-eye align-middle me-1"></i>Quick view</a></div>
                     </div>
                     </div>
                     <hr class="d-sm-none">
@@ -99,14 +79,14 @@
                 <!-- Product-->
             {{--<div class="col-md-4 col-sm-6 px-2 mb-4">
                     <div class="card product-card"><span class="badge bg-danger badge-shadow">Sale</span>
-                    <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="https://cartzilla.createx.studio/shop-single-v1.html"><img src="./Cartzilla _ Shop grid right sidebar_files/02(3).jpg" alt="Product"></a>
+                    <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class=" bi bi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="/shop-single-v1.html"><img src="./Cartzilla _ Shop grid right sidebar_files/02(3).jpg" alt="Product"></a>
                     <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Women’s T-shirt</a>
-                        <h3 class="product-title fs-sm"><a href="https://cartzilla.createx.studio/shop-single-v1.html">Cotton Lace Blouse</a></h3>
+                        <h3 class="product-title fs-sm"><a href="/shop-single-v1.html">Cotton Lace Blouse</a></h3>
                         <div class="d-flex justify-content-between">
                         <div class="product-price"><span class="text-accent">$28.<small>50</small></span>
                             <del class="fs-sm text-muted">38.<small>50</small></del>
                         </div>
-                        <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i><i class="star-rating-icon ci-star"></i>
+                        <div class="star-rating"><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star"></i><i class="star-rating-icon  bi bi-star"></i>
                         </div>
                         </div>
                     </div>
@@ -137,9 +117,9 @@
                             <option>L</option>
                             <option>XL</option>
                         </select>
-                        <button class="btn btn-primary btn-sm" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                        <button class="btn btn-primary btn-sm" type="button"><i class=" bi bi-cart fs-sm me-1"></i>Add to Cart</button>
                         </div>
-                        <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+                        <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class=" bi bi-eye align-middle me-1"></i>Quick view</a></div>
                     </div>
                     </div>
                     <hr class="d-sm-none">
@@ -163,12 +143,12 @@
               <!-- Product-->
               <div class="col-md-4 col-sm-6 px-2 mb-4">
                 <div class="card product-card">
-                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="https://cartzilla.createx.studio/shop-single-v1.html"><img src="./Cartzilla _ Shop grid right sidebar_files/11.jpg" alt="Product"></a>
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class=" bi bi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="/shop-single-v1.html"><img src="./Cartzilla _ Shop grid right sidebar_files/11.jpg" alt="Product"></a>
                   <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Men’s Sandals</a>
-                    <h3 class="product-title fs-sm"><a href="https://cartzilla.createx.studio/shop-single-v1.html">Soft Footbed Sandals</a></h3>
+                    <h3 class="product-title fs-sm"><a href="/shop-single-v1.html">Soft Footbed Sandals</a></h3>
                     <div class="d-flex justify-content-between">
                       <div class="product-price"><span class="text-accent">$99.<small>50</small></span></div>
-                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star"></i>
+                      <div class="star-rating"><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star"></i>
                       </div>
                     </div>
                   </div>
@@ -195,9 +175,9 @@
                         <option>11</option>
                         <option>11.5</option>
                       </select>
-                      <button class="btn btn-primary btn-sm" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
+                      <button class="btn btn-primary btn-sm" type="button"><i class=" bi bi-cart fs-sm me-1"></i>Add to Cart</button>
                     </div>
-                    <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+                    <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class=" bi bi-eye align-middle me-1"></i>Quick view</a></div>
                   </div>
                 </div>
                 <hr class="d-sm-none">
@@ -205,12 +185,12 @@
               <!-- Product-->
               <div class="col-md-4 col-sm-6 px-2 mb-4">
                 <div class="card product-card">
-                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class="ci-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="https://cartzilla.createx.studio/shop-single-v1.html"><img src="./Cartzilla _ Shop grid right sidebar_files/12.jpg" alt="Product"></a>
+                  <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class=" bi bi-heart"></i></button><a class="card-img-top d-block overflow-hidden" href="/shop-single-v1.html"><img src="./Cartzilla _ Shop grid right sidebar_files/12.jpg" alt="Product"></a>
                   <div class="card-body py-2"><a class="product-meta d-block fs-xs pb-1" href="#">Men’s Hats</a>
-                    <h3 class="product-title fs-sm"><a href="https://cartzilla.createx.studio/shop-single-v1.html">3-Color Sun Stash Hat</a></h3>
+                    <h3 class="product-title fs-sm"><a href="/shop-single-v1.html">3-Color Sun Stash Hat</a></h3>
                     <div class="d-flex justify-content-between">
                       <div class="product-price"><span class="text-accent">$25.<small>99</small></span></div>
-                      <div class="star-rating"><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i><i class="star-rating-icon ci-star-filled active"></i>
+                      <div class="star-rating"><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i><i class="star-rating-icon  bi bi-star-filled active"></i>
                       </div>
                     </div>
                   </div>
@@ -229,8 +209,8 @@
                         <label class="form-option-label" for="l4">L</label>
                       </div>
                     </div>
-                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class="ci-cart fs-sm me-1"></i>Add to Cart</button>
-                    <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class="ci-eye align-middle me-1"></i>Quick view</a></div>
+                    <button class="btn btn-primary btn-sm d-block w-100 mb-2" type="button"><i class=" bi bi-cart fs-sm me-1"></i>Add to Cart</button>
+                    <div class="text-center"><a class="nav-link-style fs-ms" href="#quick-view" data-bs-toggle="modal"><i class=" bi bi-eye align-middle me-1"></i>Quick view</a></div>
                   </div>
                 </div>
                 <hr class="d-sm-none">
@@ -242,7 +222,7 @@
             <!-- Pagination-->
             <nav class="d-flex justify-content-between pt-2" aria-label="Page navigation">
               <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#"><i class="ci-arrow-left me-2"></i>Prev</a></li>
+                <li class="page-item"><a class="page-link" href="#"><i class=" bi bi-arrow-left me-2"></i>Prev</a></li>
               </ul>
               <ul class="pagination">
                 <li class="page-item d-sm-none"><span class="page-link page-link-static">1 / 5</span></li>
@@ -253,7 +233,7 @@
                 <li class="page-item d-none d-sm-block"><a class="page-link" href="#">5</a></li>
               </ul>
               <ul class="pagination">
-                <li class="page-item"><a class="page-link" href="#" aria-label="Next">Next<i class="ci-arrow-right ms-2"></i></a></li>
+                <li class="page-item"><a class="page-link" href="#" aria-label="Next">Next<i class=" bi bi-arrow-right ms-2"></i></a></li>
               </ul>
             </nav>
           </section>
@@ -279,7 +259,7 @@
                         <div class="accordion-body">
                           <div class="widget widget-links widget-filter">
                             <div class="input-group input-group-sm mb-2">
-                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class=" bi bi-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
                             </div>
                             <ul class="widget-list widget-filter-list pt-1" style="height: 12rem;" data-simplebar="init" data-simplebar-auto-hide="false"><div class="simplebar-wrapper" style="margin: -4px -16px 0px 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 4px 16px 0px 0px;">
                               <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">1,953</span></a></li>
@@ -308,7 +288,7 @@
                         <div class="accordion-body">
                           <div class="widget widget-links widget-filter">
                             <div class="input-group input-group-sm mb-2">
-                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class=" bi bi-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
                             </div>
                             <ul class="widget-list widget-filter-list pt-1" style="height: 12rem;" data-simplebar="init" data-simplebar-auto-hide="false"><div class="simplebar-wrapper" style="margin: -4px -16px 0px 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 4px 16px 0px 0px;">
                               <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">2,548</span></a></li>
@@ -343,7 +323,7 @@
                         <div class="accordion-body">
                           <div class="widget widget-links widget-filter">
                             <div class="input-group input-group-sm mb-2">
-                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                              <input class="widget-filter-search form-control rounded-end" type="text" placeholder="Search"><i class=" bi bi-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
                             </div>
                             <ul class="widget-list widget-filter-list pt-1" style="height: 12rem;" data-simplebar="init" data-simplebar-auto-hide="false"><div class="simplebar-wrapper" style="margin: -4px -16px 0px 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;"><div class="simplebar-content" style="padding: 4px 16px 0px 0px;">
                               <li class="widget-list-item widget-filter-item"><a class="widget-list-link d-flex justify-content-between align-items-center" href="#"><span class="widget-filter-item-text">View all</span><span class="fs-xs text-muted ms-3">801</span></a></li>
@@ -440,7 +420,7 @@
                 <div class="widget widget-filter mb-4 pb-4 border-bottom">
                   <h3 class="widget-title">Brand</h3>
                   <div class="input-group input-group-sm mb-2">
-                    <input class="widget-filter-search form-control rounded-end pe-5" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                    <input class="widget-filter-search form-control rounded-end pe-5" type="text" placeholder="Search"><i class=" bi bi-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
                   </div>
                   <ul class="widget-list widget-filter-list list-unstyled pt-1" style="max-height: 11rem;" data-simplebar="init" data-simplebar-auto-hide="false"><div class="simplebar-wrapper" style="margin: -4px -16px 0px 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 4px 16px 0px 0px;">
                     <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
@@ -623,7 +603,7 @@
                 <div class="widget widget-filter mb-4 pb-4 border-bottom">
                   <h3 class="widget-title">Size</h3>
                   <div class="input-group input-group-sm mb-2">
-                    <input class="widget-filter-search form-control rounded-end pe-5" type="text" placeholder="Search"><i class="ci-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
+                    <input class="widget-filter-search form-control rounded-end pe-5" type="text" placeholder="Search"><i class=" bi bi-search position-absolute top-50 end-0 translate-middle-y fs-sm me-3"></i>
                   </div>
                   <ul class="widget-list widget-filter-list list-unstyled pt-1" style="max-height: 11rem;" data-simplebar="init" data-simplebar-auto-hide="false"><div class="simplebar-wrapper" style="margin: -4px -16px 0px 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: auto; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 4px 16px 0px 0px;">
                     <li class="widget-filter-item d-flex justify-content-between align-items-center mb-1">
@@ -782,5 +762,25 @@
 
 
         </div>
+      </div>
+
+      <div class="container">
+        <form wire:submit.prevent="addProduct">  
+            <input class="form-control" type="text" placeholder="name" wire:model.lazy="name">
+            <input class="form-control" type="text" placeholder="description" wire:model.lazy="description">
+            <input class="form-control" type="text" placeholder="price" wire:model.lazy="price">
+            <input class="form-control" type="text" placeholder="discount" wire:model.lazy="discount">
+            <input class="form-control" type="text" placeholder="salePrice" wire:model.lazy="salePrice">
+            
+            <button class="btn btn-primary btn-shadow d-block w-100 mt-2"  type="submit">Submit</button>
+        </form>                 
+        
+
+        <form wire:submit.prevent="multiImage">
+            <label class="form-label">Upload Multi Image<span class="text-danger">*</span></label> 
+            <input type="file" class="form-control" placeholder="multiple Image" wire:model="brand_logo"  multiple="multiple">
+            <button class="btn btn-primary btn-shadow d-block w-100 mt-2"  type="submit">Submit</button>
+        </form>
+
       </div>
 </main>
