@@ -54,9 +54,15 @@ class ProductComponent extends Component
 
     }
 
+
+    public function AddtoWishlist()
+    {
+       
+    }
+
     //$bran = Event::find($this ->event_id);
             //$brand->event_id = $bran->id;
- //$brand->user_id = Auth::user()->id;
+   //$brand->user_id = Auth::user()->id;
     public function render()
     {
         $datoJollyKnots = Product::orderBy('updated_at','desc')->get();

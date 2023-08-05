@@ -27,12 +27,13 @@
             
             <!-- Products grid-->
             <div class="row g-0 mx-n2">
-
+            <!-- Product-->
               @foreach( $datoJollyKnots as $knots)
-                <!-- Product-->
+                
                 <div class="col-md-4 col-sm-6 px-2 mb-4">
                     <div class="card product-card">
                       <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class=" bi bi-heart"></i></button>
+                     
                       <a class="card-img-top d-block overflow-hidden" href="#">
                           <img src="{{url('storage/app/exhibition/'.$knots->image)}}" alt="Product"></a>
                           
@@ -41,12 +42,14 @@
                           <h3 class="product-title fs-sm"><a href="#">{{$knots->description}}</a></h3>
                           <div class="d-flex justify-content-between">
                           <div class="product-price"><span class="text-accent">{{$knots->price}}<small>00</small></span></div>
-                          <div class="star-rating"><i class="star-rating-icon  bi bi-star-fill active"></i>
-                          <i class="star-rating-icon  bi bi-star-fill active"></i>
-                          <i class="star-rating-icon  bi bi-star-fill active"></i>
-                          <i class="star-rating-icon  bi bi-star-fill active"></i>
-                          <i class="star-rating-icon  bi bi-star"></i>
+                          <div class="star-rating">
+                            <i class="star-rating-icon  bi bi-star-fill active"></i>
+                            <i class="star-rating-icon  bi bi-star-fill active"></i>
+                            <i class="star-rating-icon  bi bi-star-fill active"></i>
+                            <i class="star-rating-icon  bi bi-star-fill active"></i>
+                            <i class="star-rating-icon  bi bi-star"></i>
                           </div>
+                          <a href="#" id="shareBtn" class="btn btn-primary btn-sm mx-2"><i class="bi bi-share"></i></a>
                           </div>
                       </div>
                       
@@ -770,3 +773,50 @@
 
      
 </main>
+
+
+@push('scripts')
+  <script type="text/javascript">
+
+    const gmailbtn = document.getElementById('gmail-btn');
+    const facebookbtn = document.getElementById('facebook-btn');
+    const twitterbtn = document.getElementById('twitter-btn');
+    const linkedinbtn = document.getElementById('linkedin-btn');
+    const whatsappbtn = document.getElementById('whatsapp-btn');
+
+    //url
+    let postUrl = encodeURI(document.location.href);
+    let postTitle = encodeURI('{{$event->eventname}}');
+
+  
+    
+    gmailbtn.setAttribute("href",'https://mail.gmail.com/mail/?view=cm&su=${postTitle}&body=${postUrl}');
+
+    facebookbtn.setAttribute("href",'https://wwww.facebook.com/sharer.php?u=${postUrl}');
+
+    twitterbtn.setAttribute("href",'https://twitter.com/share?url=${postUrl}&text=${postTitle}');
+
+    linkedinbtn.setAttribute("href",'https://wwww.linkedin.com/shareArticle?url=${postUrl}&title=${postTitle}');
+    
+    whatsappbtn.setAttribute("href",'https://wa.me/?text=${postTitle}${postUrl}');
+
+    const shareBtn = document.getElementById('shareBtn');
+    if(navigator.share){
+      shareBtn.style.display = 'block';
+      shareBtn.addEventListener('click',()=>{
+        navigator.share({
+          title : postTitle,
+          url : postUrl,
+
+        }).then((result)=>{
+          alert('Thank you for sharing.')
+        }).catch((err)=>{
+          console.log(err);
+        });
+        });
+      }else{
+
+    }
+
+  </script>
+@endpush
