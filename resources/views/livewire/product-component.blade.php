@@ -774,9 +774,9 @@
      
 </main>
 
-
+{{--
 @push('scripts')
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
 
     const gmailbtn = document.getElementById('gmail-btn');
     const facebookbtn = document.getElementById('facebook-btn');
@@ -786,7 +786,7 @@
 
     //url
     let postUrl = encodeURI(document.location.href);
-    let postTitle = encodeURI('{{$event->eventname}}');
+    //let postTitle = encodeURI('{{$datoJollyKnots->name}}');
 
   
     
@@ -818,5 +818,7 @@
 
     }
 
-  </script>
+  </script> -->
 @endpush
+
+--}}

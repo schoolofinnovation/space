@@ -1,4 +1,4 @@
-    <footer class="bg-primary-dark border-top border-white-10">
+    {{--<footer class="bg-primary-dark border-top border-white-10">
       <div class="container">
         <div class="row content-space-1">
           <div class="col-lg-3 mb-7 mb-lg-0">
@@ -166,9 +166,12 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer>--}}
 
 
+    @if(session('utype') === 'ADM')
+
+    @elseif(session('utype') === 'USR')
     <div class="handheld-toolbar">
       <div class="d-table table-layout-fixed w-100">
 
@@ -198,3 +201,34 @@
           </a>
       </div>
     </div>
+    @else
+    <div class="handheld-toolbar">
+      <div class="d-table table-layout-fixed w-100">
+
+          <a class="d-table-cell handheld-toolbar-item" href="#conference">
+            <span class="handheld-toolbar-icon"><i class="bi bi-border-style"></i></span>
+            <span class="handheld-toolbar-label">Festival</span>
+          </a>
+
+          <a class="d-table-cell handheld-toolbar-item" href="#awards">
+            <span class="handheld-toolbar-icon"><i class=" bi bi-trophy"></i></span>
+            <span class="handheld-toolbar-label">Hampers</span>
+          </a>
+          
+          <a class="d-table-cell handheld-toolbar-item" href="#exhibit">
+            <span class="handheld-toolbar-icon"><i class="bi bi-calendar4-week"></i></span>
+            <span class="handheld-toolbar-label">Gift</span>
+          </a>
+          
+          <a class="d-table-cell handheld-toolbar-item" href="#exhibit">
+            <span class="handheld-toolbar-icon"><i class="bi bi-calendar4-week"></i></span>
+            <span class="handheld-toolbar-label">Space</span>
+          </a>
+
+          <a class="d-table-cell handheld-toolbar-item" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <span class="handheld-toolbar-icon"><i class="bi bi-list"></i></span>
+            <span class="handheld-toolbar-label">Menu</span>
+          </a>
+      </div>
+    </div>
+    @endif

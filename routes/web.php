@@ -1,8 +1,19 @@
 <?php
 
 use App\Http\Livewire\AboutComponent;
+use App\Http\Livewire\Admin\AdminCategoryComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
+use App\Http\Livewire\Admin\AdminKnotsComponent;
+use App\Http\Livewire\Admin\AdminProductComponent;
+
+use App\Http\Livewire\User\UserDashboardComponent;
+
+
 use App\Http\Livewire\Admin\ProductListingComponent;
+
+use App\Http\Livewire\GiftBirthdayComponent;
+use App\Http\Livewire\GiftDateComponent;
+
 use App\Http\Livewire\AgencyComponent;
 use App\Http\Livewire\ProductComponent;
 use App\Http\Livewire\BusinessComponent;
@@ -13,18 +24,25 @@ use App\Http\Livewire\ConsultingComponent;
 use App\Http\Livewire\ContactComponent;
 use App\Http\Livewire\CorporateComponent;
 use App\Http\Livewire\ErrorComponent;
-use App\Http\Livewire\GiftBirthdayComponent;
-use App\Http\Livewire\GiftDateComponent;
+
 use App\Http\Livewire\HomeComponent;
 use App\Http\Livewire\PricingComponent;
 use App\Http\Livewire\PrivacyComponent;
 use App\Http\Livewire\ServicesComponent;
 use App\Http\Livewire\TermsComponent;
-use App\Http\Livewire\User\UserDashboardComponent;
+
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 
+//admin
+Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
+    Route::get('/admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');
+    Route::get('/admin/product', AdminProductComponent::class)->name('admin.product');
+    Route::get('/admin/categories', AdminCategoryComponent::class)->name('admin.category');
+    Route::get('/admin/knots', AdminKnotsComponent::class)->name('admin.knots');
+    Route::get('/listing', ProductListingComponent::class)->name('admin.productlisting');
+});
 
 
 Route::get ( '/Expand Your Business', HomeComponent::class)->name('space.home');
@@ -33,11 +51,6 @@ Route::get ( '/', ProductComponent::class)->name('product.home');
 //Birthday
 Route::get('/birthday', GiftBirthdayComponent::class)->name('gift.business');
 Route::get('/birthday/{board}/tie/{ido}', GiftDateComponent::class)->name('date.business');
-
-
-
-
-
 
 //Career
 Route::get('/career', CareerComponent::class)->name('space.career');
@@ -57,7 +70,7 @@ Route::get('/privacy', PrivacyComponent::class)->name('space.privacy');
 Route::get('/services', ServicesComponent::class)->name('space.services');
 Route::get('/teams', TermsComponent::class)->name('space.teams');
 
-Route::get('/listing', ProductListingComponent::class);
+
 
 // Route::middleware([
 //     'auth:sanctum',config('jetstream.auth_session'),'verified'])->group(function () {
@@ -70,10 +83,6 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
 });
 
 
-//admin
-Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
-    Route::get('/admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');;
-});
 
 //sitemap
 Route::get('sitemap',function(){

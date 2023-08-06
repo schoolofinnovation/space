@@ -170,7 +170,7 @@
                                         <div class="col-10 mb-1 small fw-lighter">Get COI business picked just for you</div>
                                       </a>
 
-                                      <a href="{{route('admin.global')}}" class=" border-0 list-group-item list-group-item-action {{'admin/global' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                      <a href="#" class=" border-0 list-group-item list-group-item-action {{'admin/global' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
                                         <div class="d-flex w-100 align-items-center justify-content-between">
                                           <normal class="mb-1">Global</normal>
                                           <small><i class="bi bi-chevron-right"></i></small>
@@ -202,7 +202,7 @@
                                         <div class="col-10 mb-1 small fw-lighter ">View your rewards & unlock new ones</div>
                                       </a>
 
-                                      <a href="{{route('user.profile')}}" class="list-group-item list-group-item-action {{'user/profile' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
+                                      <a href="#" class="list-group-item list-group-item-action {{'user/profile' == request()->path() ? 'active' : '' }} py-1 lh-sm" aria-current="true">
                                         <div class="d-flex w-100 align-items-center justify-content-between">
                                           <normal class="mb-1">Accounts & Settings</normal>
                                           <small><i class="bi bi-chevron-right"></i></small>
