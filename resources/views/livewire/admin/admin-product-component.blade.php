@@ -17,7 +17,7 @@
               </div>
 
               <div class="col-7  p-0">
-                <div class="fs-md fw-normal text-start"><a class="text-dark" href="{{route('admin.productDetails',['slug' => $franchise->slug])}}">
+                <div class="fs-md fw-normal text-start"><a class="text-dark" href="{{route('admin.productDetails',['itemid' => $franchise->id])}}">
                   {{$franchise->name, 24}}</a></div>
                 <div class="text-muted fs-sm text-start">
                 {{$franchise->description, 24}}
@@ -26,8 +26,7 @@
                 <div class="text-muted fs-xs text-start"> <span class="bg-primary">  <i class="bi bi-eye"></i> {{$franchise -> discount}}</span> 
                 <span class="bg-primary">
                   @php
-                    $getvalue = $franchise->id;
-                    $countReview = DB::table('rates')->where('event_id', $getvalue)->count()
+                    
                   @endphp
                   <i class="bi bi-pencil"></i> 
                 </span>
@@ -36,14 +35,24 @@
 
               <div class="col-3  p-0">
                 @if(is_null($franchise->image))
-                  <a class="card-img-top d-block overflow-hidden" href="#">Add</a>
+                  <a class="card-img-top d-block overflow-hidden" href="{{route('admin.productDetails',['itemid' => $franchise->id])}}">Add</a>
+                  <a class="card-img-top d-block overflow-hidden" href="#" 
+                  onclick="confirm('Are you sure, You want to delete this Entity?') || event.stopImmediatePropagation()"  
+                  wire:click.prevent="Delete({{$franchise->id}})" > 
+                    <i class="bi bi-x"></i>
                 @else
 
-                  <a class="card-img-top d-block overflow-hidden" href="{{route('admin.productDetails',['slug' => $franchise->slug])}}">
+                  <a class="card-img-top d-block overflow-hidden" href="{{route('admin.productDetails',['itemid' => $franchise->id])}}">
                   <img src="{{url('public/assets/image/exhibition/'.$franchise->image)}}" alt="{{Str::limit($franchise->eventname, 24)}}"></a>
+                  <a class="card-img-top d-block overflow-hidden" href="#" 
+                  onclick="confirm('Are you sure, You want to delete this Entity?') || event.stopImmediatePropagation()"  
+                  wire:click.prevent="Delete({{$franchise->id}})" > 
+                    <i class="bi bi-x"></i>
+                  </a>
                 @endif
               </div>
 
+             
             </div>
           </div>
           

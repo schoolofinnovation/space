@@ -44,7 +44,7 @@ Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
     Route::get('/listing', ProductListingComponent::class)->name('admin.productlisting');
 
     ///updateDetails
-    Route::get('/listing/{slug}', AdminProductDetailsComponent::class)->name('admin.productDetails');
+    Route::get('/listing/{itemid}', AdminProductDetailsComponent::class)->name('admin.productDetails');
 });
 
 

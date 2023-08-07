@@ -8,7 +8,11 @@ use Livewire\Component;
 class AdminProductComponent extends Component
 {
 
-
+    public function Delete($id)
+    {
+      $product = Product::find($id);
+      $product->delete();
+    }
 
     public function render()
     {
