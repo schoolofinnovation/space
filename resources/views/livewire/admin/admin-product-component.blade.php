@@ -17,7 +17,7 @@
               </div>
 
               <div class="col-7  p-0">
-                <div class="fs-md fw-normal text-start"><a class="text-dark" href="{{route('adminevent.detail',['slug' => $franchise->slug])}}">
+                <div class="fs-md fw-normal text-start"><a class="text-dark" href="{{route('admin.productDetails',['slug' => $franchise->slug])}}">
                   {{$franchise->name, 24}}</a></div>
                 <div class="text-muted fs-sm text-start">
                 {{$franchise->description, 24}}
@@ -36,10 +36,10 @@
 
               <div class="col-3  p-0">
                 @if(is_null($franchise->image))
-                  <a class="card-img-top d-block overflow-hidden" href="{{route('admin.eventMultiEdit',['event_id' => $franchise->id, 'formm' => 'image' ])}}">Add</a>
+                  <a class="card-img-top d-block overflow-hidden" href="#">Add</a>
                 @else
 
-                  <a class="card-img-top d-block overflow-hidden" href="{{route('adminevent.detail',['slug' => $franchise->slug])}}">
+                  <a class="card-img-top d-block overflow-hidden" href="{{route('admin.productDetails',['slug' => $franchise->slug])}}">
                   <img src="{{url('public/assets/image/exhibition/'.$franchise->image)}}" alt="{{Str::limit($franchise->eventname, 24)}}"></a>
                 @endif
               </div>

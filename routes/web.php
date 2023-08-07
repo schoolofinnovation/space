@@ -5,7 +5,7 @@ use App\Http\Livewire\Admin\AdminCategoryComponent;
 use App\Http\Livewire\Admin\AdminDashboardComponent;
 use App\Http\Livewire\Admin\AdminKnotsComponent;
 use App\Http\Livewire\Admin\AdminProductComponent;
-
+use App\Http\Livewire\Admin\AdminProductDetailsComponent;
 use App\Http\Livewire\User\UserDashboardComponent;
 
 
@@ -42,6 +42,9 @@ Route::middleware(['auth:sanctum','verified','authadmin'])->group(function(){
     Route::get('/admin/categories', AdminCategoryComponent::class)->name('admin.category');
     Route::get('/admin/knots', AdminKnotsComponent::class)->name('admin.knots');
     Route::get('/listing', ProductListingComponent::class)->name('admin.productlisting');
+
+    ///updateDetails
+    Route::get('/listing/{slug}', AdminProductDetailsComponent::class)->name('admin.productDetails');
 });
 
 

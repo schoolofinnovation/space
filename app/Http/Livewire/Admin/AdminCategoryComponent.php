@@ -22,13 +22,20 @@ class AdminCategoryComponent extends Component
         $category->status = '1';
         $category->admstatus = '1';
         $category->save();
+        $this->reset();
     }
 
-
+    public function delete($id)
+    {
+           $category  = Category::find($id);
+           $category->delete();
+    }
 
 
     public function render()
     {
-        return view('livewire.admin.admin-category-component')->layout('layouts.knotse');
+        $category = Category::get();
+
+        return view ('livewire.admin.admin-category-component',['category' => $category])->layout('layouts.knotse');
     }
 }

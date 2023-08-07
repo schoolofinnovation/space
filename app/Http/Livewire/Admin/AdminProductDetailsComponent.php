@@ -2,23 +2,27 @@
 
 namespace App\Http\Livewire\Admin;
 
-use App\Models\Category;
 use App\Models\Product;
 use Livewire\Component;
-use Livewire\WithFileUploads;
 use Illuminate\Support\Str;
 
-class ProductListingComponent extends Component
+class AdminProductDetailsComponent extends Component
 {
     public $name;
     public $description;
+    public $slug;
+    public $category;
     public $price;
     public $discount;
     public $salePrice;
-    public $image;
-    public $category;
+    public $id;
 
-    use WithFileUploads;
+    public function mount($slug)
+    {
+       $product = Product::find($slug)->first();
+
+    }
+
 
     public function addProduct() 
     {
@@ -31,7 +35,6 @@ class ProductListingComponent extends Component
         $product->discount = $this->discount;
         $product->salePrice = $this->salePrice;
         $product->save();
-        $this->reset();
     }
 
     public function image()
@@ -39,12 +42,10 @@ class ProductListingComponent extends Component
         $product = new Product();
         $product->image = $this->image;
         $product->save();
-        $this->reset();
     }
 
     public function render()
     {
-        $catego = Category::where('status', '1')->where('admstatus','1')->get();
-        return view('livewire.admin.product-listing-component',[ 'catego' => $catego])->layout('layouts.knotse');
+        return view('livewire.admin.admin-product-details-component');
     }
 }
