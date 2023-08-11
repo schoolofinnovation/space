@@ -173,8 +173,27 @@
               <div class="d-sm-flex justify-content-between align-items-center bg-secondary overflow-hidden mb-4 rounded-3">
                 <div class="py-4 my-2 my-md-0 py-md-5 px-4 ms-md-3 text-center text-sm-start">
                   <h4 class="fs-lg fw-light mb-2">Converse All Star</h4>
-                  <h3 class="mb-4">Make Your Day Comfortable</h3><a class="btn btn-primary btn-shadow btn-sm" href="#">Shop Now</a>
-                </div><img class="d-block ms-auto" src="#" alt="Shop Converse">
+                  <h3 class="mb-4">Make Your Day Comfortable</h3>
+                  <!-- <a class="btn btn-primary btn-shadow btn-sm" href="#">Shop Now</a> -->
+                  <div class="row">
+                <div class="col-sm-6 col-4  my-2">
+                 <div class="text-center fs-sm">Birthday</div>  
+                 <div class="fs-xs text-muted lh-1">Big Day Special Surprises </div> 
+                </div>
+
+                <div class="col-sm-6 col-4  my-2">
+                  <div class="text-center fs-sm">Aniversary</div>
+                  <div class="fs-xs text-muted lh-1">Celebrate Falling in Love</div>
+                </div>
+
+                <div class="col-sm-6 col-4  my-2">  
+                  <div class="text-center fs-sm">Rakhi </div>
+                    
+                    <div class="fs-xs text-muted lh-1">Pamper your sibling Abroad </div>
+                </div>
+              </div>
+                </div>
+                <img class="d-block ms-auto" src="#" alt="Shop Converse">
               </div>
             </div>
 
