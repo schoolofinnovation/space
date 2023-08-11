@@ -1,5 +1,37 @@
 <main>
 
+            <div class="py-sm-2">
+              <div class="d-sm-flex justify-content-between align-items-center bg-secondary overflow-hidden mb-4 rounded-3">
+                <div class="py-4 my-2 my-md-0 py-md-5 px-4 ms-md-3 text-center text-sm-start">
+                  <h4 class="fs-lg fw-light mb-2">Converse All Star</h4>
+                  <h3 class="mb-4">Make Your Day Comfortable</h3><a class="btn btn-primary btn-shadow btn-sm" href="#">Shop Now</a>
+                </div><img class="d-block ms-auto" src="#" alt="">
+              </div>
+            </div>
+            
+            <div class=" container text-center fs-sm">Celebrate Occasions With India #1 online Gift Store</div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-4 border border-1  border-dark my-2">
+                 <div class="text-center fs-sm">Birthday</div>  
+                 <div class="fs-xs text-muted lh-1">Big Day Special Surprises </div> 
+                </div>
+
+                <div class="col-sm-6 col-4 border border-1  border-dark my-2">
+                  <div class="text-center fs-sm">Aniversary</div>
+                  <div class="fs-xs text-muted lh-1">Celebrate Falling in Love</div>
+                </div>
+
+                <div class="col-sm-6 col-4 border border-1  border-dark my-2">  
+                  <div class="text-center fs-sm">Rakhi </div>
+                    
+                    <div class="fs-xs text-muted lh-1">Pamper your sibling Abroad </div>
+                </div>
+              </div>
+            </div>
+
+
       <div class="container pb-5 mb-2 mb-md-4">
         <div class="row">
           <!-- Content  -->
@@ -30,16 +62,16 @@
             <!-- Product-->
               @foreach( $datoJollyKnots as $knots)
                 
-                <div class="col-md-4 col-sm-6 px-2 mb-4">
+                <div class="col-md-3 col-sm-6 col-6 px-1 mb-4">
                     <div class="card product-card">
-                      <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class=" bi bi-heart"></i></button>
+                      <!-- <button class="btn-wishlist btn-sm" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Add to wishlist" aria-label="Add to wishlist"><i class=" bi bi-heart"></i></button> -->
                      
                       <a class="card-img-top d-block overflow-hidden" href="#">
                           <img src="{{url('storage/app/exhibition/'.$knots->image)}}" alt="Product"></a>
                           
                       <div class="card-body py-2">
                         <a class="product-meta d-block fs-xs pb-1" href="#">{{$knots->name}}</a>
-                          <h3 class="product-title fs-sm"><a href="#">{{$knots->description}}</a></h3>
+                          <h3 class=" fs-sm"><a href="#">{{$knots->description}}</a></h3>
                           <div class="d-flex justify-content-between">
                           <div class="product-price"><span class="text-accent">{{$knots->price}}<small>00</small></span></div>
                           <div class="star-rating">
@@ -49,7 +81,7 @@
                             <i class="star-rating-icon  bi bi-star-fill active"></i>
                             <i class="star-rating-icon  bi bi-star"></i>
                           </div>
-                          <a href="#" id="shareBtn" class="btn btn-primary btn-sm mx-2"><i class="bi bi-share"></i></a>
+                          <!-- <a href="#" id="shareBtn" class="btn btn-primary btn-sm mx-2"><i class="bi bi-share"></i></a> -->
                           </div>
                       </div>
                       
@@ -79,6 +111,8 @@
                     <hr class="d-sm-none">
                 </div>
               @endforeach
+
+            
 
               
                 <!-- Product-->
@@ -249,7 +283,7 @@
           <!-- Sidebar-->
           <aside class="col-lg-4">
             <!-- Sidebar-->
-            <div class="offcanvas offcanvas-collapse offcanvas-end bg-white w-100 rounded-3 shadow-lg ms-lg-auto py-1" id="shop-sidebar" style="max-width: 22rem;">
+            <div class="offcanvas offcanvas-collapse offcanvas-end bg-white w-100 rounded-3 shadow-lg ms-lg-auto my-2 " id="shop-sidebar" style="max-width: 22rem;">
               <div class="offcanvas-header align-items-center shadow-sm">
                 <h2 class="h5 mb-0">Filters</h2>
                 <button class="btn-close ms-auto" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>

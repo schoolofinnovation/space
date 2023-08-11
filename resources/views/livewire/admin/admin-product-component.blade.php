@@ -43,7 +43,7 @@
                 @else
 
                   <a class="card-img-top d-block overflow-hidden" href="{{route('admin.productDetails',['itemid' => $franchise->id])}}">
-                  <img src="{{url('public/assets/image/exhibition/'.$franchise->image)}}" alt="{{Str::limit($franchise->eventname, 24)}}"></a>
+                  <img src="{{url('storage/app/exhibition/'.$franchise->image)}}" alt="{{Str::limit($franchise->eventname, 24)}}"></a>
                   <a class="card-img-top d-block overflow-hidden" href="#" 
                   onclick="confirm('Are you sure, You want to delete this Entity?') || event.stopImmediatePropagation()"  
                   wire:click.prevent="Delete({{$franchise->id}})" > 

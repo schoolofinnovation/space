@@ -16,7 +16,7 @@ class AdminProductComponent extends Component
 
     public function render()
     {
-        $monthwise = Product::orderBy('created_at','ASC')->get();
+        $monthwise = Product::orderBy('created_at','DESC')->get();
 
         return view ('livewire.admin.admin-product-component',['monthwise' => $monthwise])->layout('layouts.knotse');
     }
